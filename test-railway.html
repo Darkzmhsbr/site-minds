@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧪 TESTE RAILWAY - Portal X</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container { 
+            max-width: 600px; 
+            margin: 0 auto; 
+            background: white; 
+            border-radius: 15px; 
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        h1 { 
+            color: #333; 
+            text-align: center; 
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+        .status-box { 
+            background: #f8f9fa; 
+            border: 2px solid #dee2e6; 
+            padding: 20px; 
+            margin: 20px 0; 
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        .status-box:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .btn { 
+            background: #007bff; 
+            color: white; 
+            border: none; 
+            padding: 12px 24px; 
+            border-radius: 8px; 
+            cursor: pointer; 
+            margin: 10px 5px;
+            transition: all 0.3s ease;
+            font-size: 16px;
+        }
+        .btn:hover { 
+            background: #0056b3; 
+            transform: translateY(-1px);
+        }
+        .btn-success { background: #28a745; }
+        .btn-success:hover { background: #1e7e34; }
+        .result { 
+            margin: 15px 0; 
+            padding: 15px; 
+            border-radius: 8px; 
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+        .error { 
+            background: #f8d7da; 
+            border-left-color: #dc3545; 
+        }
+        input { 
+            width: 100%; 
+            padding: 12px; 
+            margin: 8px 0; 
+            border: 2px solid #ddd; 
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+        input:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+        .info-box {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧪 TESTE RAILWAY</h1>
+        <p style="text-align: center; color: #666; margin-bottom: 30px;">
+            Verificação completa do Portal Secreto X no Railway
+        </p>
+        
+        <!-- Info Box -->
+        <div class="info-box">
+            <strong>🚀 Sistema Migrado para Railway</strong><br>
+            Frontend e Backend agora estão no mesmo servidor!<br>
+            <strong>URL:</strong> <span id="current-url"></span>
+        </div>
+        
+        <!-- Teste 1: Status da API -->
+        <div class="status-box">
+            <h3>🏥 Teste 1: Status da API</h3>
+            <p>Verifica se a API está funcionando no Railway</p>
+            <button class="btn" onclick="testAPI()">Verificar API</button>
+            <div id="api-result" class="result"></div>
+        </div>
+
+        <!-- Teste 2: Admin Login -->
+        <div class="status-box">
+            <h3>👑 Teste 2: Login Admin</h3>
+            <p>Testa autenticação do administrador</p>
+            <input type="email" id="admin-email" value="admin@portalx.com" placeholder="Email do Admin">
+            <input type="password" id="admin-password" value="admin123" placeholder="Senha do Admin">
+            <button class="btn" onclick="testAdminLogin()">Fazer Login Admin</button>
+            <div id="admin-result" class="result"></div>
+        </div>
+
+        <!-- Teste 3: Registro -->
+        <div class="status-box">
+            <h3>📝 Teste 3: Registro de Usuário</h3>
+            <p>Testa cadastro de novo usuário</p>
+            <input type="text" id="reg-name" value="Usuário Teste" placeholder="Nome">
+            <input type="email" id="reg-email" value="teste@railway.com" placeholder="Email">
+            <input type="password" id="reg-password" value="123456" placeholder="Senha">
+            <button class="btn" onclick="testRegister()">Cadastrar Usuário</button>
+            <div id="register-result" class="result"></div>
+        </div>
+
+        <!-- Teste Completo -->
+        <div class="status-box">
+            <h3>🚀 Teste Completo</h3>
+            <p>Executa todos os testes automaticamente</p>
+            <button class="btn btn-success" onclick="runAllTests()">EXECUTAR TODOS OS TESTES</button>
+            <div id="final-result" class="result"></div>
+        </div>
+
+        <!-- Links Úteis -->
+        <div class="info-box">
+            <strong>🔗 Links Úteis:</strong><br>
+            • <a href="/admin" target="_blank">Painel Admin</a><br>
+            • <a href="/login" target="_blank">Página de Login</a><br>
+            • <a href="/register" target="_blank">Página de Registro</a><br>
+            • <a href="/api/health" target="_blank">Health Check API</a>
+        </div>
+    </div>
+
+    <script>
+        // Mostrar URL atual
+        document.getElementById('current-url').textContent = window.location.origin;
+
+        // API URL relativa para Railway
+        const API_URL = '/api';
+
+        function showResult(elementId, success, message, data = null) {
+            const el = document.getElementById(elementId);
+            el.style.display = 'block';
+            el.className = success ? 'result' : 'result error';
+            
+            let content = `<strong>${success ? '✅' : '❌'} ${message}</strong>`;
+            if (data) {
+                content += `<br><small style="color: #666;">${JSON.stringify(data, null, 2)}</small>`;
+            }
+            el.innerHTML = content;
+        }
+
+        async function testAPI() {
+            try {
+                console.log('🏥 Testando API...');
+                const response = await fetch(`${API_URL}/health`);
+                const data = await response.json();
+                
+                if (response.ok) {
+                    showResult('api-result', true, `API Online! Status: ${data.status}`, data);
+                } else {
+                    showResult('api-result', false, 'API retornou erro', data);
+                }
+            } catch (error) {
+                showResult('api-result', false, `Erro na API: ${error.message}`);
+            }
+        }
+
+        async function testAdminLogin() {
+            try {
+                console.log('👑 Testando login admin...');
+                const email = document.getElementById('admin-email').value;
+                const password = document.getElementById('admin-password').value;
+                
+                const response = await fetch(`${API_URL}/admin/login`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email, password })
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok && data.token) {
+                    showResult('admin-result', true, 'Login Admin realizado com sucesso!', { token: data.token.substring(0, 20) + '...' });
+                } else {
+                    showResult('admin-result', false, `Falha no login: ${data.message}`, data);
+                }
+            } catch (error) {
+                showResult('admin-result', false, `Erro no login admin: ${error.message}`);
+            }
+        }
+
+        async function testRegister() {
+            try {
+                console.log('📝 Testando registro...');
+                const name = document.getElementById('reg-name').value;
+                const email = document.getElementById('reg-email').value;
+                const password = document.getElementById('reg-password').value;
+                
+                const response = await fetch(`${API_URL}/auth/register`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name, email, password })
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    showResult('register-result', true, 'Registro realizado com sucesso!', { message: data.message });
+                } else {
+                    showResult('register-result', false, `Falha no registro: ${data.message}`, data);
+                }
+            } catch (error) {
+                showResult('register-result', false, `Erro no registro: ${error.message}`);
+            }
+        }
+
+        async function runAllTests() {
+            showResult('final-result', true, 'Executando todos os testes...');
+            
+            await testAPI();
+            await new Promise(resolve => setTimeout(resolve, 1000));
+            
+            await testAdminLogin();
+            await new Promise(resolve => setTimeout(resolve, 1000));
+            
+            await testRegister();
+            
+            showResult('final-result', true, 'Todos os testes executados! ✅ Sistema funcionando no Railway!');
+        }
+
+        // Auto-teste quando a página carrega
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('🚀 Portal Secreto X carregado no Railway!');
+            console.log('📡 API URL:', API_URL);
+            
+            // Teste automático da API
+            setTimeout(testAPI, 1000);
+        });
+    </script>
+</body>
+</html>

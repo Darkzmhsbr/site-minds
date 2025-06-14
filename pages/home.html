@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Secreto X - Grupos Premium do Telegram</title>
+    <meta name="description" content="Os melhores grupos adultos do Telegram. Universitárias, amadoras, vazados e mais.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0a0a;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to bottom, rgba(10, 10, 10, 0.95), transparent);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 2rem;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo span {
+            background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: #d4d4d4;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #dc2626;
+        }
+
+        .filters-toggle {
+            background: rgba(220, 38, 38, 0.1);
+            border: 1px solid rgba(220, 38, 38, 0.3);
+            color: #dc2626;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .filters-toggle:hover {
+            background: rgba(220, 38, 38, 0.2);
+        }
+
+        main {
+            margin-top: 80px;
+            padding: 2rem;
+            max-width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #fff 0%, #dc2626 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #a3a3a3;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .filters-sidebar {
+            position: fixed;
+            left: -300px;
+            top: 0;
+            width: 300px;
+            height: 100vh;
+            background: #111;
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 6rem 2rem 2rem;
+            overflow-y: auto;
+            transition: left 0.3s;
+            z-index: 999;
+        }
+
+        .filters-sidebar.active {
+            left: 0;
+        }
+
+        .filter-section {
+            margin-bottom: 2rem;
+        }
+
+        .filter-title {
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #dc2626;
+        }
+
+        .filter-option {
+            display: block;
+            padding: 0.5rem;
+            color: #a3a3a3;
+            cursor: pointer;
+            transition: all 0.3s;
+            border-radius: 4px;
+        }
+
+        .filter-option:hover {
+            background: rgba(220, 38, 38, 0.1);
+            color: #fff;
+        }
+
+        .filter-option.active {
+            background: rgba(220, 38, 38, 0.2);
+            color: #dc2626;
+        }
+
+        .category-section {
+            margin-bottom: 3rem;
+        }
+
+        .category-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .category-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .see-all {
+            color: #dc2626;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: #111;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s;
+            cursor: pointer;
+            position: relative;
+            border: 1px solid transparent;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(220, 38, 38, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            filter: blur(8px);
+            transition: filter 0.3s;
+        }
+
+        .card:hover .card-image {
+            filter: blur(4px);
+        }
+
+        .card-lock {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            color: #dc2626;
+            background: rgba(0, 0, 0, 0.8);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-content {
+            padding: 1rem;
+        }
+
+        .card-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.875rem;
+            color: #737373;
+        }
+
+        .card-location {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .card-views {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .card-cta {
+            margin-top: 1rem;
+            background: #dc2626;
+            color: white;
+            border: none;
+            padding: 0.75rem;
+            width: 100%;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .card-cta:hover {
+            background: #b91c1c;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background: #111;
+            border-radius: 16px;
+            padding: 2rem;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            border: 1px solid rgba(220, 38, 38, 0.3);
+        }
+
+        .modal h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #dc2626;
+        }
+
+        .modal p {
+            color: #a3a3a3;
+            margin-bottom: 1.5rem;
+        }
+
+        .modal-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .modal-btn {
+            flex: 1;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .modal-btn-primary {
+            background: #dc2626;
+            color: white;
+        }
+
+        .modal-btn-secondary {
+            background: #262626;
+            color: #a3a3a3;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            nav {
+                gap: 1rem;
+            }
+            
+            .cards-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 1rem;
+            }
+            
+            .card-image {
+                height: 120px;
+            }
+        }
+    
+        .auth-section {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .auth-link {
+            color: #d4d4d4;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: all 0.3s;
+            font-size: 0.875rem;
+        }
+
+        .auth-link:hover {
+            color: #dc2626;
+        }
+
+        .auth-link.register {
+            background: #dc2626;
+            color: white;
+        }
+
+        .auth-link.register:hover {
+            background: #b91c1c;
+        }</style>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png">
+    <meta name="theme-color" content="#e50914">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                🔞 <span>Portal Secreto X</span>
+            </div>
+            <nav>
+                <a href="#" class="nav-link">Novidades</a>
+                <a href="#" class="nav-link">Populares</a>
+                <a href="#" class="nav-link">Premium</a>
+                <button class="filters-toggle" onclick="toggleFilters()">
+                    Filtros
+                </button>
+            </nav>
+            
+    <div class="auth-section">
+        <a href="/pages/login.html" class="auth-link">Entrar</a>
+        <a href="/pages/register.html" class="auth-link register">Cadastrar</a>
+    </div>
+        </div>
+    </header>
+
+    <div class="filters-sidebar" id="filtersSidebar">
+        <div class="filter-section">
+            <h3 class="filter-title">CATEGORIAS</h3>
+            <div class="filter-option" data-category="universitarias">👯‍♀️ Universitárias</div>
+            <div class="filter-option" data-category="cornos">🤘 Cornos</div>
+            <div class="filter-option" data-category="amadoras">🎥 Amadoras</div>
+            <div class="filter-option" data-category="famosas">⭐ Famosas</div>
+            <div class="filter-option" data-category="vazadas">📱 Vazadas</div>
+        </div>
+        
+        <div class="filter-section">
+            <h3 class="filter-title">ESTADOS</h3>
+            <div class="filter-option" data-state="SP">São Paulo</div>
+            <div class="filter-option" data-state="RJ">Rio de Janeiro</div>
+            <div class="filter-option" data-state="MG">Minas Gerais</div>
+            <div class="filter-option" data-state="SC">Santa Catarina</div>
+            <div class="filter-option" data-state="RS">Rio Grande do Sul</div>
+        </div>
+        
+        <div class="filter-section">
+            <h3 class="filter-title">ORDENAR</h3>
+            <div class="filter-option" data-sort="views">Mais vistos</div>
+            <div class="filter-option" data-sort="new">Mais recentes</div>
+            <div class="filter-option" data-sort="hot">Em alta 🔥</div>
+        </div>
+    </div>
+
+    <main>
+        <div class="hero">
+            <h1>Os Grupos Mais Quentes do Telegram</h1>
+            <p>Acesso exclusivo aos melhores conteúdos adultos. Novos grupos adicionados diariamente.</p>
+        </div>
+
+        <div id="categoriesContainer"></div>
+    </main>
+
+    <div class="modal" id="groupModal">
+        <div class="modal-content">
+            <h2>🔓 Desbloquear Grupo</h2>
+            <p id="modalGroupName"></p>
+            <p>Você está prestes a acessar conteúdo adulto exclusivo. Confirma que deseja continuar?</p>
+            <div class="modal-buttons">
+                <button class="modal-btn modal-btn-primary" onclick="accessGroup()">
+                    Acessar agora
+                </button>
+                <button class="modal-btn modal-btn-secondary" onclick="closeModal()">
+                    Cancelar
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/assets/js/image-loader.js"></script>
+    <script>
+        const groups = [
+            {
+                id: 1,
+                name: "Universitárias SP 🔥",
+                category: "universitarias",
+                state: "SP",
+                city: "São Paulo",
+                views: 2341,
+                image: "/assets/img/categories/universitarias.svg",
+                link: "https://t.me/exemplo1"
+            },
+            {
+                id: 2,
+                name: "Cornos MG Flagras",
+                category: "cornos",
+                state: "MG",
+                city: "Belo Horizonte",
+                views: 1876,
+                image: "/assets/img/categories/cornos.svg",
+                link: "https://t.me/exemplo2"
+            },
+            {
+                id: 3,
+                name: "Amadoras RJ 18+",
+                category: "amadoras",
+                state: "RJ",
+                city: "Rio de Janeiro",
+                views: 3102,
+                image: "/assets/img/categories/amadoras.svg",
+                link: "https://t.me/exemplo3"
+            },
+            {
+                id: 4,
+                name: "Famosas Vazadas BR",
+                category: "famosas",
+                state: "SP",
+                city: "São Paulo",
+                views: 4521,
+                image: "/assets/img/categories/famosas.svg",
+                link: "https://t.me/exemplo4"
+            },
+            {
+                id: 5,
+                name: "Vazadas SC Premium",
+                category: "vazadas",
+                state: "SC",
+                city: "Florianópolis",
+                views: 1654,
+                image: "/assets/img/categories/vazadas.svg",
+                link: "https://t.me/exemplo5"
+            }
+        ];
+
+        window.gruposData = groups;
+        let filteredGroups = [...groups];
+        let currentGroup = null;
+
+        function toggleFilters() {
+            document.getElementById('filtersSidebar').classList.toggle('active');
+        }
+
+        function createCard(group) {
+            return `
+                <div class="card" onclick="showModal('${group.name}', '${group.link}')">
+                    <div style="position: relative;">
+                        <img src="${group.image}" alt="${group.name}" class="card-image">
+                        <div class="card-lock">🔒</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">${group.name}</h3>
+                        <div class="card-meta">
+                            <span class="card-location">📍 ${group.city}</span>
+                            <span class="card-views">👁 ${group.views.toLocaleString()}</span>
+                        </div>
+                        <button class="card-cta">Desbloquear 🔥</button>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderGroups() {
+            const container = document.getElementById('categoriesContainer');
+            const categories = {
+                universitarias: "👯‍♀️ Universitárias",
+                cornos: "🤘 Cornos",
+                amadoras: "🎥 Amadoras",
+                famosas: "⭐ Famosas",
+                vazadas: "📱 Vazadas"
+            };
+
+            container.innerHTML = '';
+
+            Object.keys(categories).forEach(category => {
+                const categoryGroups = filteredGroups.filter(g => g.category === category);
+                if (categoryGroups.length > 0) {
+                    container.innerHTML += `
+                        <div class="category-section">
+                            <div class="category-header">
+                                <h2 class="category-title">${categories[category]}</h2>
+                                <a href="/pages/categorias/${category}.html" class="see-all">Ver todos →</a>
+                            </div>
+                            <div class="cards-grid">
+                                ${categoryGroups.map(createCard).join('')}
+                            </div>
+                        </div>
+                    `;
+                }
+            });
+        }
+
+        function showModal(name, link) {
+            currentGroup = { name, link };
+            document.getElementById('modalGroupName').textContent = name;
+            document.getElementById('groupModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('groupModal').style.display = 'none';
+            currentGroup = null;
+        }
+
+        function accessGroup() {
+            if (currentGroup) {
+                window.open(currentGroup.link, '_blank');
+                closeModal();
+            }
+        }
+
+        document.querySelectorAll('.filter-option').forEach(option => {
+            option.addEventListener('click', function() {
+                this.classList.toggle('active');
+                applyFilters();
+            });
+        });
+
+        function applyFilters() {
+            const activeCategories = Array.from(document.querySelectorAll('.filter-option[data-category].active')).map(el => el.dataset.category);
+            const activeStates = Array.from(document.querySelectorAll('.filter-option[data-state].active')).map(el => el.dataset.state);
+
+            filteredGroups = groups.filter(group => {
+                const categoryMatch = activeCategories.length === 0 || activeCategories.includes(group.category);
+                const stateMatch = activeStates.length === 0 || activeStates.includes(group.state);
+                return categoryMatch && stateMatch;
+            });
+
+            renderGroups();
+        }
+
+        window.onclick = function(event) {
+            if (event.target === document.getElementById('groupModal')) {
+                closeModal();
+            }
+        }
+
+        renderGroups();
+
+        for (let i = 6; i <= 20; i++) {
+            groups.push({
+                id: i,
+                name: `Grupo Premium ${i}`,
+                category: ["universitarias", "cornos", "amadoras", "famosas", "vazadas"][i % 5],
+                state: ["SP", "RJ", "MG", "SC", "RS"][i % 5],
+                city: ["São Paulo", "Rio de Janeiro", "Belo Horizonte", "Florianópolis", "Porto Alegre"][i % 5],
+                views: Math.floor(Math.random() * 5000) + 1000,
+                image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='160'%3E%3Crect fill='%23dc2626' width='280' height='160'/%3E%3Ctext x='140' y='80' text-anchor='middle' fill='white' font-size='20'%3E🔞%3C/text%3E%3C/svg%3E",
+                link: `https://t.me/exemplo${i}`
+            });
+        }
+        renderGroups();
+    </script>
+    <script src="/assets/js/search.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js');
+        }
+    </script>
+    <script src="/assets/js/funnel-system.js"></script>
+    <script src="/assets/js/rotation-system.js"></script>
+    <script src="/assets/js/auth-system.js"></script>
+    <script src="/assets/js/integration-system.js"></script>
+</body>
+</html>

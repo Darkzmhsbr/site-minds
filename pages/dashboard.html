@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Portal Secreto X</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #0a0a0a; color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+        header { background: #141414; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #333; }
+        .header-left { display: flex; align-items: center; gap: 2rem; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: #dc2626; }
+        .user-info { display: flex; align-items: center; gap: 1rem; }
+        .user-name { color: #a3a3a3; font-size: 0.875rem; }
+        .logout-btn { background: transparent; color: #dc2626; border: 1px solid #dc2626; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: 500; transition: all 0.3s; }
+        .logout-btn:hover { background: #dc2626; color: #fff; }
+        .container { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; }
+        .add-channel-btn { background: #dc2626; color: #fff; border: none; padding: 0.875rem 1.5rem; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; margin-bottom: 2rem; display: flex; align-items: center; gap: 0.5rem; }
+        .add-channel-btn:hover { background: #b91c1c; }
+        .channels-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
+        .channel-card { background: #141414; border-radius: 12px; overflow: hidden; border: 1px solid #262626; transition: border-color 0.3s; }
+        .channel-card:hover { border-color: #dc2626; }
+        .channel-image { width: 100%; height: 160px; object-fit: cover; background: #1a1a1a; }
+        .channel-info { padding: 1.5rem; }
+        .channel-name { font-size: 1.125rem; font-weight: 600; margin-bottom: 0.5rem; }
+        .channel-category { display: inline-block; background: rgba(220, 38, 38, 0.2); color: #dc2626; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.75rem; margin-bottom: 1rem; }
+        .channel-stats { display: flex; justify-content: space-between; align-items: center; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #262626; }
+        .channel-date { color: #a3a3a3; font-size: 0.875rem; }
+        .channel-link { color: #dc2626; text-decoration: none; font-size: 0.875rem; font-weight: 500; }
+        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); z-index: 1000; align-items: center; justify-content: center; }
+        .modal.active { display: flex; }
+        .modal-content { background: #141414; border-radius: 12px; padding: 2rem; width: 90%; max-width: 500px; }
+        .modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
+        .modal-title { font-size: 1.5rem; color: #dc2626; }
+        .close-btn { background: transparent; border: none; color: #a3a3a3; font-size: 1.5rem; cursor: pointer; }
+        .form-group { margin-bottom: 1.5rem; }
+        label { display: block; margin-bottom: 0.5rem; color: #a3a3a3; font-size: 0.875rem; }
+        input, select { width: 100%; padding: 0.75rem; background: #1f1f1f; border: 1px solid #333; border-radius: 8px; color: #fff; font-size: 1rem; }
+        .form-hint { color: #666; font-size: 0.75rem; margin-top: 0.25rem; }
+        .form-actions { display: flex; gap: 1rem; margin-top: 2rem; }
+        .btn { flex: 1; padding: 0.875rem; border: none; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; }
+        .btn-primary { background: #dc2626; color: #fff; }
+        .btn-secondary { background: #262626; color: #a3a3a3; }
+        .empty-state { text-align: center; padding: 4rem 2rem; }
+        .empty-icon { font-size: 4rem; margin-bottom: 1rem; opacity: 0.5; }
+        .empty-text { color: #a3a3a3; margin-bottom: 2rem; }
+        .file-input-wrapper { position: relative; display: inline-block; width: 100%; }
+        .file-input { display: none; }
+        .file-input-label { display: block; width: 100%; padding: 0.75rem; background: #1f1f1f; border: 1px solid #333; border-radius: 8px; color: #a3a3a3; cursor: pointer; text-align: center; transition: all 0.3s; }
+        .file-input-label:hover { border-color: #dc2626; color: #fff; }
+        .file-preview { margin-top: 1rem; }
+        .file-preview img { max-width: 100%; max-height: 200px; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">🔞 Portal Secreto X</div>
+            <nav><a href="/home" style="color: #a3a3a3; text-decoration: none;">Ver Site</a></nav>
+        </div>
+        <div class="user-info">
+            <span class="user-name" id="userName">Carregando...</span>
+            <button class="logout-btn" onclick="logout()">Sair</button>
+        </div>
+    </header>
+    <div class="container">
+        <button class="add-channel-btn" onclick="openModal()">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+            Cadastrar Canal/Grupo
+        </button>
+        <div id="channelsContainer">
+            <div class="empty-state">
+                <div class="empty-icon">📱</div>
+                <p class="empty-text">Você ainda não cadastrou nenhum canal</p>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="addChannelModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Cadastrar Canal/Grupo</h2>
+                <button class="close-btn" onclick="closeModal()">&times;</button>
+            </div>
+            <form id="channelForm" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="name">Nome do Canal/Grupo</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="telegramLink">Link do Telegram</label>
+                    <input type="url" id="telegramLink" name="telegram_link" placeholder="https://t.me/seucanal">
+                </div>
+                <div class="form-group">
+                    <label for="category">Categoria</label>
+                    <select id="category" name="category" required>
+                        <option value="">Selecione uma categoria</option>
+                        <option value="universitarias">Universitárias</option>
+                        <option value="cornos">Cornos</option>
+                        <option value="amadoras">Amadoras</option>
+                        <option value="famosas">Famosas</option>
+                        <option value="vazadas">Vazadas</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="state">Estado</label>
+                    <select id="state" name="state">
+                        <option value="">Selecione um estado</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="PR">Paraná</option>
+                        <option value="BA">Bahia</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="CE">Ceará</option>
+                        <option value="GO">Goiás</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="city">Cidade</label>
+                    <input type="text" id="city" name="city" placeholder="Ex: São Paulo">
+                </div>
+                <div class="form-group">
+                    <label for="image">Imagem do Canal (Opcional)</label>
+                    <div class="file-input-wrapper">
+                        <input type="file" id="image" name="image" class="file-input" accept="image/*">
+                        <label for="image" class="file-input-label">
+                            Clique para escolher uma imagem
+                        </label>
+                    </div>
+                    <div class="form-hint">Deixe em branco para usar a imagem do Telegram. Máximo 5MB.</div>
+                    <div id="imagePreview" class="file-preview"></div>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                    <button type="button" class="btn btn-secondary" onclick="closeModal()">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const API_URL = window.location.origin + '/api';
+        const token = localStorage.getItem('authToken');
+        const user = JSON.parse(localStorage.getItem('user') || '{}');
+        
+        if (!token) {
+            window.location.href = '/login';
+        }
+        
+        document.getElementById('userName').textContent = user?.name || 'Usuário';
+        
+        let userChannels = [];
+        
+        async function loadUserChannels() {
+            try {
+                const response = await fetch(`${API_URL}/channels/user`, {
+                    headers: { 'Authorization': `Bearer ${token}` }
+                });
+                if (response.ok) {
+                    userChannels = await response.json();
+                    renderChannels();
+                }
+            } catch (error) {
+                console.error('Erro ao carregar canais:', error);
+            }
+        }
+        
+        function renderChannels() {
+            const container = document.getElementById('channelsContainer');
+            if (userChannels.length === 0) {
+                container.innerHTML = '<div class="empty-state"><div class="empty-icon">📱</div><p class="empty-text">Você ainda não cadastrou nenhum canal</p></div>';
+                return;
+            }
+            container.innerHTML = `<div class="channels-grid">${userChannels.map(channel => `
+                <div class="channel-card">
+                    <img src="${channel.image_url || '/assets/img/default-channel.jpg'}" alt="${channel.name}" class="channel-image">
+                    <div class="channel-info">
+                        <h3 class="channel-name">${channel.name}</h3>
+                        <span class="channel-category">${channel.category}</span>
+                        <div class="channel-stats">
+                            <span class="channel-date">${new Date(channel.created_at).toLocaleDateString('pt-BR')}</span>
+                            <a href="${channel.telegram_link}" target="_blank" class="channel-link">Ver canal →</a>
+                        </div>
+                    </div>
+                </div>`).join('')}</div>`;
+        }
+        
+        function openModal() {
+            document.getElementById('addChannelModal').classList.add('active');
+        }
+        
+        function closeModal() {
+            document.getElementById('addChannelModal').classList.remove('active');
+            document.getElementById('channelForm').reset();
+            document.getElementById('imagePreview').innerHTML = '';
+        }
+        
+        function logout() {
+            localStorage.removeItem('authToken');
+            localStorage.removeItem('user');
+            window.location.href = '/';
+        }
+        
+        document.getElementById('image').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('imagePreview').innerHTML = `<img src="${e.target.result}" alt="Preview">`;
+                };
+                reader.readAsDataURL(file);
+                document.querySelector('.file-input-label').textContent = file.name;
+            }
+        });
+        
+        document.getElementById('channelForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const formData = new FormData(e.target);
+            
+            try {
+                const response = await fetch(`${API_URL}/channels`, {
+                    method: 'POST',
+                    headers: { 'Authorization': `Bearer ${token}` },
+                    body: formData
+                });
+                
+                if (response.ok) {
+                    closeModal();
+                    loadUserChannels();
+                    alert('Canal cadastrado com sucesso!');
+                } else {
+                    const error = await response.json();
+                    alert(error.message || 'Erro ao cadastrar canal');
+                }
+            } catch (error) {
+                alert('Erro ao cadastrar canal');
+            }
+        });
+        
+        loadUserChannels();
+    </script>
+</body>
+</html>

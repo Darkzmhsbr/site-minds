@@ -1,0 +1,147 @@
+{
+  "categorias": [
+    {
+      "id": "universitarias",
+      "nome": "Universitárias",
+      "emoji": "👯‍♀️",
+      "slug": "universitarias",
+      "description": "Grupos exclusivos com conteúdo universitário de todo Brasil",
+      "keywords": ["universitárias", "estudantes", "faculdade", "campus", "novinhas", "18+"],
+      "gruposAtivos": 47,
+      "membrosTotal": 12543,
+      "subcategorias": ["federais", "particulares", "intercâmbio", "repúblicas", "festas"],
+      "popularidade": 95,
+      "crescimento": "+23%"
+    },
+    {
+      "id": "cornos",
+      "nome": "Cornos",
+      "emoji": "🤘",
+      "slug": "cornos",
+      "description": "Flagras reais e conteúdo exclusivo de traições verificadas",
+      "keywords": ["cornos", "flagras", "traição", "cuckold", "hotwife", "swing"],
+      "gruposAtivos": 32,
+      "membrosTotal": 8765,
+      "subcategorias": ["flagras", "conversas", "vídeos", "relatos", "ao vivo"],
+      "popularidade": 88,
+      "crescimento": "+18%"
+    },
+    {
+      "id": "amadoras",
+      "nome": "Amadoras",
+      "emoji": "🎥",
+      "slug": "amadoras",
+      "description": "Conteúdo amador real enviado pelos próprios membros",
+      "keywords": ["amadoras", "caseiras", "reais", "brasileiras", "naturais", "espontâneas"],
+      "gruposAtivos": 56,
+      "membrosTotal": 15432,
+      "subcategorias": ["selfies", "vídeos", "casais", "solo", "grupal"],
+      "popularidade": 92,
+      "crescimento": "+31%"
+    },
+    {
+      "id": "famosas",
+      "nome": "Famosas",
+      "emoji": "⭐",
+      "slug": "famosas",
+      "description": "Vazamentos e conteúdo exclusivo de celebridades brasileiras",
+      "keywords": ["famosas", "celebridades", "influencers", "atrizes", "cantoras", "modelos"],
+      "gruposAtivos": 28,
+      "membrosTotal": 19876,
+      "subcategorias": ["instagram", "tiktok", "onlyfans", "tv", "música"],
+      "popularidade": 97,
+      "crescimento": "+42%"
+    },
+    {
+      "id": "vazadas",
+      "nome": "Vazadas",
+      "emoji": "📱",
+      "slug": "vazadas",
+      "description": "Conteúdo vazado e exclusivo de diversas plataformas",
+      "keywords": ["vazadas", "leaked", "vazamentos", "exclusivo", "privado", "premium"],
+      "gruposAtivos": 41,
+      "membrosTotal": 11234,
+      "subcategorias": ["whatsapp", "telegram", "instagram", "privacy", "close friends"],
+      "popularidade": 90,
+      "crescimento": "+27%"
+    },
+    {
+      "id": "milfs",
+      "nome": "MILFs",
+      "emoji": "🔥",
+      "slug": "milfs",
+      "description": "Mulheres maduras e experientes em conteúdo exclusivo",
+      "keywords": ["milfs", "maduras", "coroas", "experientes", "40+", "gostosas"],
+      "gruposAtivos": 23,
+      "membrosTotal": 7654,
+      "subcategorias": ["brasileiras", "loiras", "morenas", "casadas", "solteiras"],
+      "popularidade": 85,
+      "crescimento": "+15%"
+    },
+    {
+      "id": "novinhas",
+      "nome": "Novinhas",
+      "emoji": "🍑",
+      "slug": "novinhas",
+      "description": "Conteúdo exclusivo com as mais novas do Brasil",
+      "keywords": ["novinhas", "18+", "teens", "jovens", "iniciantes", "amadoras"],
+      "gruposAtivos": 38,
+      "membrosTotal": 14321,
+      "subcategorias": ["loiras", "morenas", "ruivas", "asiáticas", "mistas"],
+      "popularidade": 94,
+      "crescimento": "+35%"
+    },
+    {
+      "id": "casais",
+      "nome": "Casais",
+      "emoji": "💑",
+      "slug": "casais",
+      "description": "Casais reais compartilhando momentos íntimos",
+      "keywords": ["casais", "couples", "swing", "menage", "troca", "liberal"],
+      "gruposAtivos": 29,
+      "membrosTotal": 9876,
+      "subcategorias": ["amadores", "swing", "exibição", "menage", "bissexuais"],
+      "popularidade": 87,
+      "crescimento": "+20%"
+    },
+    {
+      "id": "trans",
+      "nome": "Trans",
+      "emoji": "⚧️",
+      "slug": "trans",
+      "description": "Conteúdo exclusivo da comunidade trans brasileira",
+      "keywords": ["trans", "travesti", "shemale", "tgirl", "transexual", "cd"],
+      "gruposAtivos": 18,
+      "membrosTotal": 5432,
+      "subcategorias": ["brasileiras", "asiáticas", "latinas", "europeias", "africanas"],
+      "popularidade": 78,
+      "crescimento": "+12%"
+    },
+    {
+      "id": "fetiche",
+      "nome": "Fetiche",
+      "emoji": "⛓️",
+      "slug": "fetiche",
+      "description": "Grupos especializados em diversos fetiches e fantasias",
+      "keywords": ["fetiche", "bdsm", "dominação", "submissão", "fetiches", "kink"],
+      "gruposAtivos": 21,
+      "membrosTotal": 6789,
+      "subcategorias": ["pés", "bdsm", "latex", "roleplay", "dominação"],
+      "popularidade": 82,
+      "crescimento": "+16%"
+    }
+  ],
+  "tags": [
+    "loiras", "morenas", "ruivas", "negras", "asiáticas", "latinas",
+    "magras", "gordinhas", "fitness", "tatuadas", "piercing", "naturais",
+    "siliconadas", "depiladas", "peludas", "anal", "oral", "grupal",
+    "solo", "lésbicas", "bissexuais", "voyeur", "exibição", "público"
+  ],
+  "regioes": {
+    "sudeste": ["SP", "RJ", "MG", "ES"],
+    "sul": ["SC", "RS", "PR"],
+    "nordeste": ["BA", "PE", "CE", "RN", "PB", "SE", "AL", "PI", "MA"],
+    "centro-oeste": ["GO", "DF", "MT", "MS"],
+    "norte": ["AM", "PA", "AC", "RO", "RR", "AP", "TO"]
+  }
+}

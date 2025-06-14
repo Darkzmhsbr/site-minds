@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Secreto X - Acesso Restrito +18</title>
+    <meta name="description" content="Acesso exclusivo aos grupos mais quentes do Telegram. Conteúdo adulto +18.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0a0a;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .bg-effect {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(220, 38, 38, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(220, 38, 38, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 40% 20%, rgba(220, 38, 38, 0.08) 0%, transparent 50%);
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 500px;
+            padding: 3rem 2rem;
+            text-align: center;
+            background: rgba(17, 17, 17, 0.9);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(220, 38, 38, 0.2);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            transform: translateY(0);
+            animation: slideUp 0.6s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            filter: drop-shadow(0 0 20px rgba(220, 38, 38, 0.5));
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #fff 0%, #dc2626 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #a3a3a3;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .warning-box {
+            background: rgba(220, 38, 38, 0.1);
+            border: 1px solid rgba(220, 38, 38, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .warning-box p {
+            color: #fbbf24;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .warning-box small {
+            color: #d4d4d4;
+            font-size: 0.875rem;
+        }
+
+        .age-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .age-btn {
+            flex: 1;
+            padding: 1rem;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .age-btn-yes {
+            background: #dc2626;
+            color: white;
+        }
+
+        .age-btn-yes:hover {
+            background: #b91c1c;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(220, 38, 38, 0.3);
+        }
+
+        .age-btn-no {
+            background: #262626;
+            color: #737373;
+            border: 1px solid #404040;
+        }
+
+        .age-btn-no:hover {
+            background: #1a1a1a;
+        }
+
+        .loading-container {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .loader {
+            width: 60px;
+            height: 60px;
+            border: 3px solid rgba(220, 38, 38, 0.1);
+            border-top-color: #dc2626;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .loading-text {
+            color: #d4d4d4;
+            font-size: 1rem;
+        }
+
+        .counter {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #dc2626;
+            margin-top: 1rem;
+        }
+
+        .legal {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.75rem;
+            color: #737373;
+            line-height: 1.5;
+        }
+
+        .error-message {
+            display: none;
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-top: 1rem;
+            color: #fca5a5;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                margin: 1rem;
+                padding: 2rem 1.5rem;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            .age-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png">
+    <meta name="theme-color" content="#e50914">
+</head>
+<body>
+    <div class="bg-effect"></div>
+    
+    <div class="container">
+        <div id="ageVerification">
+            <div class="logo">🔞</div>
+            <h1>Portal Secreto X</h1>
+            <p class="subtitle">
+                Descobrimos os grupos mais insanos do Telegram em 2025
+            </p>
+            
+            <div class="warning-box">
+                <p>⚠️ AVISO IMPORTANTE</p>
+                <small>Este site contém conteúdo adulto explícito. O acesso é permitido apenas para maiores de 18 anos.</small>
+            </div>
+            
+            <p style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1.5rem;">
+                Você tem 18 anos ou mais?
+            </p>
+            
+            <div class="age-buttons">
+                <button class="age-btn age-btn-yes" onclick="verifyAge(true)">
+                    SIM, tenho +18
+                </button>
+                <button class="age-btn age-btn-no" onclick="verifyAge(false)">
+                    NÃO
+                </button>
+            </div>
+            
+            <div class="error-message" id="errorMessage">
+                Acesso negado. Este conteúdo é restrito para maiores de 18 anos.
+            </div>
+        </div>
+        
+        <div class="loading-container" id="loadingContainer">
+            <div class="loader"></div>
+            <p class="loading-text">Verificando sua idade...</p>
+            <p class="loading-text" id="loadingMessage">Preparando conteúdo exclusivo</p>
+            <div class="counter" id="counter">7</div>
+        </div>
+        
+        <div class="legal">
+            Ao acessar este site, você confirma que tem 18 anos ou mais e concorda com nossos termos de uso. 
+            Todo conteúdo é fornecido por terceiros. Não nos responsabilizamos pelo conteúdo dos grupos.
+        </div>
+    </div>
+
+    <script>
+        let countdown = 7;
+        let countdownInterval;
+        
+        const messages = [
+            "Verificando sua idade...",
+            "Carregando grupos secretos...",
+            "Desbloqueando conteúdo premium...",
+            "Preparando sua experiência...",
+            "Acessando banco de dados...",
+            "Quase lá..."
+        ];
+        
+        function setCookie(name, value, hours) {
+            const d = new Date();
+            d.setTime(d.getTime() + (hours * 60 * 60 * 1000));
+            document.cookie = `${name}=${value};expires=${d.toUTCString()};path=/`;
+        }
+        
+        function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+        }
+        
+        function verifyAge(isAdult) {
+            if (!isAdult) {
+                document.getElementById('errorMessage').style.display = 'block';
+                setTimeout(() => {
+                    window.location.href = 'https://www.google.com';
+                }, 2000);
+                return;
+            }
+            
+            document.getElementById('ageVerification').style.display = 'none';
+            document.getElementById('loadingContainer').style.display = 'flex';
+            
+            let messageIndex = 0;
+            const messageInterval = setInterval(() => {
+                if (messageIndex < messages.length) {
+                    document.getElementById('loadingMessage').textContent = messages[messageIndex];
+                    messageIndex++;
+                }
+            }, 1000);
+            
+            countdownInterval = setInterval(() => {
+                countdown--;
+                document.getElementById('counter').textContent = countdown;
+                
+                if (countdown <= 0) {
+                    clearInterval(countdownInterval);
+                    clearInterval(messageInterval);
+                    setCookie('ageVerified', 'true', 24);
+                    window.location.href = '/pages/home.html';
+                }
+            }, 1000);
+        }
+        
+        if (getCookie('ageVerified') === 'true') {
+            window.location.href = '/pages/home.html';
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.querySelector('.container');
+            container.style.opacity = '0';
+            setTimeout(() => {
+                container.style.opacity = '1';
+            }, 100);
+        });
+    </script>
+    <script src="/assets/js/search.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js');
+        }
+    </script>
+    <script src="/assets/js/funnel-system.js"></script>
+    <script src="/assets/js/rotation-system.js"></script>
+    <script src="/assets/js/auth-system.js"></script>
+</body>
+</html>

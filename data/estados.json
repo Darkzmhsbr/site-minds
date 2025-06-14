@@ -1,0 +1,220 @@
+{
+  "estados": [
+    {
+      "sigla": "SP",
+      "nome": "São Paulo",
+      "regiao": "Sudeste",
+      "cidades": ["São Paulo", "Campinas", "Santos", "Guarulhos", "São Bernardo do Campo", "Santo André", "Osasco", "Sorocaba", "Ribeirão Preto", "São José dos Campos"],
+      "grupos": 127,
+      "membros": 45320
+    },
+    {
+      "sigla": "RJ",
+      "nome": "Rio de Janeiro",
+      "regiao": "Sudeste",
+      "cidades": ["Rio de Janeiro", "Niterói", "Petrópolis", "Nova Iguaçu", "Duque de Caxias", "São Gonçalo", "Campos dos Goytacazes", "Volta Redonda"],
+      "grupos": 89,
+      "membros": 32100
+    },
+    {
+      "sigla": "MG",
+      "nome": "Minas Gerais",
+      "regiao": "Sudeste",
+      "cidades": ["Belo Horizonte", "Uberlândia", "Contagem", "Juiz de Fora", "Betim", "Montes Claros", "Uberaba", "Governador Valadares"],
+      "grupos": 76,
+      "membros": 28900
+    },
+    {
+      "sigla": "SC",
+      "nome": "Santa Catarina",
+      "regiao": "Sul",
+      "cidades": ["Florianópolis", "Joinville", "Blumenau", "São José", "Chapecó", "Criciúma", "Itajaí", "Jaraguá do Sul"],
+      "grupos": 54,
+      "membros": 19800
+    },
+    {
+      "sigla": "RS",
+      "nome": "Rio Grande do Sul",
+      "regiao": "Sul",
+      "cidades": ["Porto Alegre", "Caxias do Sul", "Pelotas", "Canoas", "Santa Maria", "Gravataí", "Novo Hamburgo", "São Leopoldo"],
+      "grupos": 62,
+      "membros": 22400
+    },
+    {
+      "sigla": "PR",
+      "nome": "Paraná",
+      "regiao": "Sul",
+      "cidades": ["Curitiba", "Londrina", "Maringá", "Ponta Grossa", "Cascavel", "São José dos Pinhais", "Foz do Iguaçu", "Colombo"],
+      "grupos": 58,
+      "membros": 21200
+    },
+    {
+      "sigla": "BA",
+      "nome": "Bahia",
+      "regiao": "Nordeste",
+      "cidades": ["Salvador", "Feira de Santana", "Vitória da Conquista", "Camaçari", "Itabuna", "Juazeiro", "Lauro de Freitas", "Ilhéus"],
+      "grupos": 43,
+      "membros": 15600
+    },
+    {
+      "sigla": "PE",
+      "nome": "Pernambuco",
+      "regiao": "Nordeste",
+      "cidades": ["Recife", "Jaboatão dos Guararapes", "Olinda", "Caruaru", "Petrolina", "Paulista", "Cabo de Santo Agostinho", "Camaragibe"],
+      "grupos": 38,
+      "membros": 13900
+    },
+    {
+      "sigla": "CE",
+      "nome": "Ceará",
+      "regiao": "Nordeste",
+      "cidades": ["Fortaleza", "Caucaia", "Juazeiro do Norte", "Maracanaú", "Sobral", "Crato", "Itapipoca", "Maranguape"],
+      "grupos": 35,
+      "membros": 12700
+    },
+    {
+      "sigla": "GO",
+      "nome": "Goiás",
+      "regiao": "Centro-Oeste",
+      "cidades": ["Goiânia", "Aparecida de Goiânia", "Anápolis", "Rio Verde", "Luziânia", "Águas Lindas de Goiás", "Valparaíso de Goiás", "Trindade"],
+      "grupos": 32,
+      "membros": 11500
+    },
+    {
+      "sigla": "DF",
+      "nome": "Distrito Federal",
+      "regiao": "Centro-Oeste",
+      "cidades": ["Brasília", "Ceilândia", "Taguatinga", "Samambaia", "Plano Piloto", "Águas Claras", "Gama", "Sobradinho"],
+      "grupos": 41,
+      "membros": 14800
+    },
+    {
+      "sigla": "ES",
+      "nome": "Espírito Santo",
+      "regiao": "Sudeste",
+      "cidades": ["Vitória", "Vila Velha", "Serra", "Cariacica", "Linhares", "Cachoeiro de Itapemirim", "Guarapari", "São Mateus"],
+      "grupos": 28,
+      "membros": 10200
+    },
+    {
+      "sigla": "MT",
+      "nome": "Mato Grosso",
+      "regiao": "Centro-Oeste",
+      "cidades": ["Cuiabá", "Várzea Grande", "Rondonópolis", "Sinop", "Tangará da Serra", "Cáceres", "Sorriso", "Lucas do Rio Verde"],
+      "grupos": 22,
+      "membros": 7900
+    },
+    {
+      "sigla": "MS",
+      "nome": "Mato Grosso do Sul",
+      "regiao": "Centro-Oeste",
+      "cidades": ["Campo Grande", "Dourados", "Três Lagoas", "Corumbá", "Ponta Porã", "Naviraí", "Nova Andradina", "Aquidauana"],
+      "grupos": 19,
+      "membros": 6800
+    },
+    {
+      "sigla": "PA",
+      "nome": "Pará",
+      "regiao": "Norte",
+      "cidades": ["Belém", "Ananindeua", "Santarém", "Marabá", "Castanhal", "Parauapebas", "Abaetetuba", "Cametá"],
+      "grupos": 26,
+      "membros": 9400
+    },
+    {
+      "sigla": "AM",
+      "nome": "Amazonas",
+      "regiao": "Norte",
+      "cidades": ["Manaus", "Parintins", "Itacoatiara", "Manacapuru", "Coari", "Tefé", "Maués", "Tabatinga"],
+      "grupos": 18,
+      "membros": 6500
+    },
+    {
+      "sigla": "RN",
+      "nome": "Rio Grande do Norte",
+      "regiao": "Nordeste",
+      "cidades": ["Natal", "Mossoró", "Parnamirim", "São Gonçalo do Amarante", "Ceará-Mirim", "Macaíba", "Caicó", "Açu"],
+      "grupos": 21,
+      "membros": 7600
+    },
+    {
+      "sigla": "PB",
+      "nome": "Paraíba",
+      "regiao": "Nordeste",
+      "cidades": ["João Pessoa", "Campina Grande", "Santa Rita", "Patos", "Bayeux", "Sousa", "Cajazeiras", "Cabedelo"],
+      "grupos": 17,
+      "membros": 6100
+    },
+    {
+      "sigla": "AL",
+      "nome": "Alagoas",
+      "regiao": "Nordeste",
+      "cidades": ["Maceió", "Arapiraca", "Rio Largo", "Palmeira dos Índios", "União dos Palmares", "Penedo", "São Miguel dos Campos", "Coruripe"],
+      "grupos": 14,
+      "membros": 5000
+    },
+    {
+      "sigla": "SE",
+      "nome": "Sergipe",
+      "regiao": "Nordeste",
+      "cidades": ["Aracaju", "Nossa Senhora do Socorro", "Lagarto", "Itabaiana", "São Cristóvão", "Estância", "Tobias Barreto", "Itabaianinha"],
+      "grupos": 12,
+      "membros": 4300
+    },
+    {
+      "sigla": "MA",
+      "nome": "Maranhão",
+      "regiao": "Nordeste",
+      "cidades": ["São Luís", "Imperatriz", "São José de Ribamar", "Caxias", "Timon", "Codó", "Paço do Lumiar", "Açailândia"],
+      "grupos": 16,
+      "membros": 5700
+    },
+    {
+      "sigla": "PI",
+      "nome": "Piauí",
+      "regiao": "Nordeste",
+      "cidades": ["Teresina", "Parnaíba", "Picos", "Campo Maior", "Piripiri", "Floriano", "Barras", "União"],
+      "grupos": 11,
+      "membros": 3900
+    },
+    {
+      "sigla": "TO",
+      "nome": "Tocantins",
+      "regiao": "Norte",
+      "cidades": ["Palmas", "Araguaína", "Gurupi", "Porto Nacional", "Paraíso do Tocantins", "Araguatins", "Colinas do Tocantins", "Guaraí"],
+      "grupos": 9,
+      "membros": 3200
+    },
+    {
+      "sigla": "RO",
+      "nome": "Rondônia",
+      "regiao": "Norte",
+      "cidades": ["Porto Velho", "Ji-Paraná", "Ariquemes", "Cacoal", "Vilhena", "Jaru", "Rolim de Moura", "Guajará-Mirim"],
+      "grupos": 10,
+      "membros": 3600
+    },
+    {
+      "sigla": "AC",
+      "nome": "Acre",
+      "regiao": "Norte",
+      "cidades": ["Rio Branco", "Cruzeiro do Sul", "Sena Madureira", "Tarauacá", "Feijó", "Brasileia", "Senador Guiomard", "Plácido de Castro"],
+      "grupos": 6,
+      "membros": 2100
+    },
+    {
+      "sigla": "AP",
+      "nome": "Amapá",
+      "regiao": "Norte",
+      "cidades": ["Macapá", "Santana", "Laranjal do Jari", "Oiapoque", "Pedra Branca do Amapari", "Vitória do Jari", "Tartarugalzinho", "Porto Grande"],
+      "grupos": 5,
+      "membros": 1800
+    },
+    {
+      "sigla": "RR",
+      "nome": "Roraima",
+      "regiao": "Norte",
+      "cidades": ["Boa Vista", "Rorainópolis", "Caracaraí", "Alto Alegre", "Mucajaí", "Cantá", "Bonfim", "Pacaraima"],
+      "grupos": 4,
+      "membros": 1400
+    }
+  ]
+}

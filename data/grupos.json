@@ -1,0 +1,1902 @@
+[
+  {
+    "id": 1,
+    "name": "Universitárias SP 🔥",
+    "category": "universitarias",
+    "state": "SP",
+    "city": "São Paulo",
+    "views": 5432,
+    "image": "/assets/img/cards/universitarias-sp-001.jpg",
+    "link": "https://t.me/grupoexemplo1",
+    "isNew": true,
+    "isPremium": false,
+    "description": "Grupo exclusivo com conteúdo universitário",
+    "tags": [
+      "novinhas",
+      "18+",
+      "universitarias",
+      "sp"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Cornos MG Flagras",
+    "category": "cornos",
+    "state": "MG",
+    "city": "Belo Horizonte",
+    "views": 3876,
+    "image": "/assets/img/cards/cornos-mg-001.jpg",
+    "link": "https://t.me/grupoexemplo2",
+    "isNew": false,
+    "isPremium": true,
+    "description": "Flagras reais e verificados",
+    "tags": [
+      "cornos",
+      "flagras",
+      "mg",
+      "casais"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Amadoras RJ Premium",
+    "category": "amadoras",
+    "state": "RJ",
+    "city": "Rio de Janeiro",
+    "views": 8765,
+    "image": "/assets/img/cards/amadoras-rj-001.jpg",
+    "link": "https://t.me/grupoexemplo3",
+    "isNew": false,
+    "isPremium": true,
+    "description": "Conteúdo amador exclusivo do RJ",
+    "tags": [
+      "amadoras",
+      "rj",
+      "premium",
+      "exclusivo"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Famosas Vazadas BR",
+    "category": "famosas",
+    "state": "SP",
+    "city": "São Paulo",
+    "views": 12543,
+    "image": "/assets/img/cards/famosas-br-001.jpg",
+    "link": "https://t.me/grupoexemplo4",
+    "isNew": true,
+    "isPremium": true,
+    "description": "Vazamentos de famosas brasileiras",
+    "tags": [
+      "famosas",
+      "vazadas",
+      "celebridades",
+      "brasil"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Vazadas SC 18+",
+    "category": "vazadas",
+    "state": "SC",
+    "city": "Florianópolis",
+    "views": 2341,
+    "image": "/assets/img/cards/vazadas-sc-001.jpg",
+    "link": "https://t.me/grupoexemplo5",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Vazamentos exclusivos de SC",
+    "tags": [
+      "vazadas",
+      "sc",
+      "floripa",
+      "exclusivo"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Universitárias RS Hot",
+    "category": "universitarias",
+    "state": "RS",
+    "city": "Porto Alegre",
+    "views": 4567,
+    "image": "/assets/img/cards/uni-rs-001.jpg",
+    "link": "https://t.me/grupoexemplo6",
+    "isNew": true,
+    "isPremium": false,
+    "description": "Universitárias do sul",
+    "tags": [
+      "universitarias",
+      "rs",
+      "poa",
+      "novinhas"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Cornos SP Capital",
+    "category": "cornos",
+    "state": "SP",
+    "city": "São Paulo",
+    "views": 6789,
+    "image": "/assets/img/cards/cornos-sp-001.jpg",
+    "link": "https://t.me/grupoexemplo7",
+    "isNew": false,
+    "isPremium": true,
+    "description": "Flagras da capital paulista",
+    "tags": [
+      "cornos",
+      "sp",
+      "capital",
+      "flagras"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Amadoras PR 🔥",
+    "category": "amadoras",
+    "state": "PR",
+    "city": "Curitiba",
+    "views": 3210,
+    "image": "/assets/img/cards/amadoras-pr-001.jpg",
+    "link": "https://t.me/grupoexemplo8",
+    "isNew": true,
+    "isPremium": false,
+    "description": "Amadoras paranaenses",
+    "tags": [
+      "amadoras",
+      "pr",
+      "curitiba",
+      "18+"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Famosas Instagram Vazou",
+    "category": "famosas",
+    "state": "RJ",
+    "city": "Rio de Janeiro",
+    "views": 9876,
+    "image": "/assets/img/cards/famosas-insta-001.jpg",
+    "link": "https://t.me/grupoexemplo9",
+    "isNew": true,
+    "isPremium": true,
+    "description": "Influencers do Instagram",
+    "tags": [
+      "famosas",
+      "instagram",
+      "influencers",
+      "vazou"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Vazadas BA Premium",
+    "category": "vazadas",
+    "state": "BA",
+    "city": "Salvador",
+    "views": 4321,
+    "image": "/assets/img/cards/vazadas-ba-001.jpg",
+    "link": "https://t.me/grupoexemplo10",
+    "isNew": false,
+    "isPremium": true,
+    "description": "Vazamentos exclusivos da Bahia",
+    "tags": [
+      "vazadas",
+      "ba",
+      "salvador",
+      "premium"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Universitárias MG",
+    "category": "universitarias",
+    "state": "MG",
+    "city": "Uberlândia",
+    "views": 2987,
+    "image": "/assets/img/cards/uni-mg-002.jpg",
+    "link": "https://t.me/grupoexemplo11",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Universitárias mineiras",
+    "tags": [
+      "universitarias",
+      "mg",
+      "uberlandia",
+      "novinhas"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Cornos RJ Zona Sul",
+    "category": "cornos",
+    "state": "RJ",
+    "city": "Rio de Janeiro",
+    "views": 5654,
+    "image": "/assets/img/cards/cornos-rj-zs.jpg",
+    "link": "https://t.me/grupoexemplo12",
+    "isNew": true,
+    "isPremium": true,
+    "description": "Flagras da zona sul carioca",
+    "tags": [
+      "cornos",
+      "rj",
+      "zona-sul",
+      "flagras"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Amadoras PE Hot",
+    "category": "amadoras",
+    "state": "PE",
+    "city": "Recife",
+    "views": 3765,
+    "image": "/assets/img/cards/amadoras-pe-001.jpg",
+    "link": "https://t.me/grupoexemplo13",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Amadoras pernambucanas",
+    "tags": [
+      "amadoras",
+      "pe",
+      "recife",
+      "nordeste"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Famosas TikTok BR",
+    "category": "famosas",
+    "state": "SP",
+    "city": "São Paulo",
+    "views": 11234,
+    "image": "/assets/img/cards/famosas-tiktok.jpg",
+    "link": "https://t.me/grupoexemplo14",
+    "isNew": true,
+    "isPremium": true,
+    "description": "TikTokers brasileiras",
+    "tags": [
+      "famosas",
+      "tiktok",
+      "influencers",
+      "brasil"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Vazadas CE 18+",
+    "category": "vazadas",
+    "state": "CE",
+    "city": "Fortaleza",
+    "views": 2876,
+    "image": "/assets/img/cards/vazadas-ce-001.jpg",
+    "link": "https://t.me/grupoexemplo15",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Vazamentos do Ceará",
+    "tags": [
+      "vazadas",
+      "ce",
+      "fortaleza",
+      "nordeste"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Universitárias SC Hot",
+    "category": "universitarias",
+    "state": "SC",
+    "city": "Joinville",
+    "views": 3998,
+    "image": "/assets/img/cards/uni-sc-002.jpg",
+    "link": "https://t.me/grupoexemplo16",
+    "isNew": true,
+    "isPremium": false,
+    "description": "Universitárias catarinenses",
+    "tags": [
+      "universitarias",
+      "sc",
+      "joinville",
+      "sul"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Cornos GO Premium",
+    "category": "cornos",
+    "state": "GO",
+    "city": "Goiânia",
+    "views": 4123,
+    "image": "/assets/img/cards/cornos-go-001.jpg",
+    "link": "https://t.me/grupoexemplo17",
+    "isNew": false,
+    "isPremium": true,
+    "description": "Flagras de Goiás",
+    "tags": [
+      "cornos",
+      "go",
+      "goiania",
+      "centro-oeste"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Amadoras ES 🔥",
+    "category": "amadoras",
+    "state": "ES",
+    "city": "Vitória",
+    "views": 2543,
+    "image": "/assets/img/cards/amadoras-es-001.jpg",
+    "link": "https://t.me/grupoexemplo18",
+    "isNew": true,
+    "isPremium": false,
+    "description": "Amadoras capixabas",
+    "tags": [
+      "amadoras",
+      "es",
+      "vitoria",
+      "capixaba"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Famosas OnlyFans BR",
+    "category": "famosas",
+    "state": "RJ",
+    "city": "Niterói",
+    "views": 8765,
+    "image": "/assets/img/cards/famosas-of.jpg",
+    "link": "https://t.me/grupoexemplo19",
+    "isNew": true,
+    "isPremium": true,
+    "description": "Conteúdo OnlyFans vazado",
+    "tags": [
+      "famosas",
+      "onlyfans",
+      "premium",
+      "vazou"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Vazadas DF Exclusivo",
+    "category": "vazadas",
+    "state": "DF",
+    "city": "Brasília",
+    "views": 5432,
+    "image": "/assets/img/cards/vazadas-df-001.jpg",
+    "link": "https://t.me/grupoexemplo20",
+    "isNew": false,
+    "isPremium": true,
+    "description": "Vazamentos da capital federal",
+    "tags": [
+      "vazadas",
+      "df",
+      "brasilia",
+      "exclusivo"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Universitárias Fortaleza Premium 🔥",
+    "category": "universitarias",
+    "state": "CE",
+    "city": "Fortaleza",
+    "views": 6073,
+    "image": "/assets/img/cards/universitarias-ce-021.jpg",
+    "link": "https://t.me/grupo21",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Conteúdo acadêmico +18",
+    "tags": [
+      "universitarias",
+      "ce",
+      "fortaleza",
+      "18+"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Grupo Cornos GO VIP 👑",
+    "category": "cornos",
+    "state": "GO",
+    "city": "Aparecida de Goiânia",
+    "views": 7935,
+    "image": "/assets/img/cards/cornos-go-022.jpg",
+    "link": "https://t.me/grupo22",
+    "isNew": true,
+    "isPremium": true,
+    "description": "Flagras reais e verificados",
+    "tags": [
+      "cornos",
+      "go",
+      "aparecida-de-goiânia",
+      "18+"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Amadoras Exclusivas Taguatinga 💎",
+    "category": "amadoras",
+    "state": "DF",
+    "city": "Taguatinga",
+    "views": 7508,
+    "image": "/assets/img/cards/amadoras-df-023.jpg",
+    "link": "https://t.me/grupo23",
+    "isNew": false,
+    "isPremium": true,
+    "description": "Amadoras verificadas",
+    "tags": [
+      "amadoras",
+      "df",
+      "taguatinga",
+      "18+"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Cariacica Famosas 18+ 🔞",
+    "category": "famosas",
+    "state": "ES",
+    "city": "Cariacica",
+    "views": 4111,
+    "image": "/assets/img/cards/famosas-es-024.jpg",
+    "link": "https://t.me/grupo24",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Conteúdo exclusivo de famosas",
+    "tags": [
+      "famosas",
+      "es",
+      "cariacica",
+      "18+"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Vazadas SP TOP 🏆",
+    "category": "vazadas",
+    "state": "SP",
+    "city": "Osasco",
+    "views": 10985,
+    "image": "/assets/img/cards/vazadas-sp-025.jpg",
+    "link": "https://t.me/grupo25",
+    "isNew": true,
+    "isPremium": true,
+    "description": "Vazamentos exclusivos",
+    "tags": [
+      "vazadas",
+      "sp",
+      "osasco",
+      "18+"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Canal Universitárias Rio de Janeiro HD 📸",
+    "category": "universitarias",
+    "state": "RJ",
+    "city": "Rio de Janeiro",
+    "views": 4886,
+    "image": "/assets/img/cards/universitarias-rj-026.jpg",
+    "link": "https://t.me/grupo26",
+    "isNew": true,
+    "isPremium": false,
+    "description": "Novinhas universitárias da região",
+    "tags": [
+      "universitarias",
+      "rj",
+      "rio-de-janeiro",
+      "18+"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Cornos Uberlândia 24h 🕐",
+    "category": "cornos",
+    "state": "MG",
+    "city": "Uberlândia",
+    "views": 6883,
+    "image": "/assets/img/cards/cornos-mg-027.jpg",
+    "link": "https://t.me/grupo27",
+    "isNew": false,
+    "isPremium": true,
+    "description": "Casais liberais da região",
+    "tags": [
+      "cornos",
+      "mg",
+      "uberlândia",
+      "18+"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "VIP Amadoras SC 💳",
+    "category": "amadoras",
+    "state": "SC",
+    "city": "Blumenau",
+    "views": 5992,
+    "image": "/assets/img/cards/amadoras-sc-028.jpg",
+    "link": "https://t.me/grupo28",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Conteúdo amador exclusivo",
+    "tags": [
+      "amadoras",
+      "sc",
+      "blumenau",
+      "18+"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Famosas Canoas Vazados 🔓",
+    "category": "famosas",
+    "state": "RS",
+    "city": "Canoas",
+    "views": 8619,
+    "image": "/assets/img/cards/famosas-rs-029.jpg",
+    "link": "https://t.me/grupo29",
+    "isNew": false,
+    "isPremium": true,
+    "description": "Influencers e celebridades",
+    "tags": [
+      "famosas",
+      "rs",
+      "canoas",
+      "18+"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Pack Vazadas PR 📦",
+    "category": "vazadas",
+    "state": "PR",
+    "city": "Cascavel",
+    "views": 7657,
+    "image": "/assets/img/cards/vazadas-pr-030.jpg",
+    "link": "https://t.me/grupo30",
+    "isNew": true,
+    "isPremium": false,
+    "description": "Pack exclusivo vazado",
+    "tags": [
+      "vazadas",
+      "pr",
+      "cascavel",
+      "18+"
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Universitárias Salvador Premium 🔥",
+    "category": "universitarias",
+    "state": "BA",
+    "city": "Salvador",
+    "views": 16299,
+    "image": "/assets/img/cards/universitarias-ba-031.jpg",
+    "link": "https://t.me/grupo31",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Grupo exclusivo com conteúdo universitário",
+    "tags": [
+      "universitarias",
+      "ba",
+      "salvador",
+      "18+"
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Grupo Cornos PE VIP 👑",
+    "category": "cornos",
+    "state": "PE",
+    "city": "Jaboatão dos Guararapes",
+    "views": 6605,
+    "image": "/assets/img/cards/cornos-pe-032.jpg",
+    "link": "https://t.me/grupo32",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Conteúdo cuckold exclusivo",
+    "tags": [
+      "cornos",
+      "pe",
+      "jaboatão-dos-guararapes",
+      "18+"
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Amadoras Exclusivas Juazeiro do Norte 💎",
+    "category": "amadoras",
+    "state": "CE",
+    "city": "Juazeiro do Norte",
+    "views": 12831,
+    "image": "/assets/img/cards/amadoras-ce-033.jpg",
+    "link": "https://t.me/grupo33",
+    "isNew": false,
+    "isPremium": true,
+    "description": "Conteúdo caseiro real",
+    "tags": [
+      "amadoras",
+      "ce",
+      "juazeiro-do-norte",
+      "18+"
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Rio Verde Famosas 18+ 🔞",
+    "category": "famosas",
+    "state": "GO",
+    "city": "Rio Verde",
+    "views": 12241,
+    "image": "/assets/img/cards/famosas-go-034.jpg",
+    "link": "https://t.me/grupo34",
+    "isNew": true,
+    "isPremium": false,
+    "description": "Vazamentos de famosas",
+    "tags": [
+      "famosas",
+      "go",
+      "rio-verde",
+      "18+"
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Vazadas DF TOP 🏆",
+    "category": "vazadas",
+    "state": "DF",
+    "city": "Águas Claras",
+    "views": 4195,
+    "image": "/assets/img/cards/vazadas-df-035.jpg",
+    "link": "https://t.me/grupo35",
+    "isNew": true,
+    "isPremium": false,
+    "description": "Conteúdo vazado recente",
+    "tags": [
+      "vazadas",
+      "df",
+      "águas-claras",
+      "18+"
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Canal Universitárias Vitória HD 📸",
+    "category": "universitarias",
+    "state": "ES",
+    "city": "Vitória",
+    "views": 7813,
+    "image": "/assets/img/cards/universitarias-es-036.jpg",
+    "link": "https://t.me/grupo36",
+    "isNew": false,
+    "isPremium": true,
+    "description": "Conteúdo acadêmico +18",
+    "tags": [
+      "universitarias",
+      "es",
+      "vitória",
+      "18+"
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Cornos Campinas 24h 🕐",
+    "category": "cornos",
+    "state": "SP",
+    "city": "Campinas",
+    "views": 12500,
+    "image": "/assets/img/cards/cornos-sp-037.jpg",
+    "link": "https://t.me/grupo37",
+    "isNew": true,
+    "isPremium": false,
+    "description": "Flagras reais e verificados",
+    "tags": [
+      "cornos",
+      "sp",
+      "campinas",
+      "18+"
+    ]
+  },
+  {
+    "id": 38,
+    "name": "VIP Amadoras RJ 💳",
+    "category": "amadoras",
+    "state": "RJ",
+    "city": "Petrópolis",
+    "views": 3080,
+    "image": "/assets/img/cards/amadoras-rj-038.jpg",
+    "link": "https://t.me/grupo38",
+    "isNew": true,
+    "isPremium": false,
+    "description": "Amadoras verificadas",
+    "tags": [
+      "amadoras",
+      "rj",
+      "petrópolis",
+      "18+"
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Famosas Juiz de Fora Vazados 🔓",
+    "category": "famosas",
+    "state": "MG",
+    "city": "Juiz de Fora",
+    "views": 5975,
+    "image": "/assets/img/cards/famosas-mg-039.jpg",
+    "link": "https://t.me/grupo39",
+    "isNew": false,
+    "isPremium": true,
+    "description": "Conteúdo exclusivo de famosas",
+    "tags": [
+      "famosas",
+      "mg",
+      "juiz-de-fora",
+      "18+"
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Pack Vazadas SC 📦",
+    "category": "vazadas",
+    "state": "SC",
+    "city": "Chapecó",
+    "views": 15648,
+    "image": "/assets/img/cards/vazadas-sc-040.jpg",
+    "link": "https://t.me/grupo40",
+    "isNew": false,
+    "isPremium": true,
+    "description": "Vazamentos exclusivos",
+    "tags": [
+      "vazadas",
+      "sc",
+      "chapecó",
+      "18+"
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Universitárias Porto Alegre Premium 🔥",
+    "category": "universitarias",
+    "state": "RS",
+    "city": "Porto Alegre",
+    "views": 15617,
+    "image": "/assets/img/cards/universitarias-rs-041.jpg",
+    "link": "https://t.me/grupo41",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Novinhas universitárias da região",
+    "tags": [
+      "universitarias",
+      "rs",
+      "porto-alegre",
+      "18+"
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Grupo Cornos PR VIP 👑",
+    "category": "cornos",
+    "state": "PR",
+    "city": "Londrina",
+    "views": 11847,
+    "image": "/assets/img/cards/cornos-pr-042.jpg",
+    "link": "https://t.me/grupo42",
+    "isNew": false,
+    "isPremium": true,
+    "description": "Casais liberais da região",
+    "tags": [
+      "cornos",
+      "pr",
+      "londrina",
+      "18+"
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Amadoras Exclusivas Vitória da Conquista 💎",
+    "category": "amadoras",
+    "state": "BA",
+    "city": "Vitória da Conquista",
+    "views": 10652,
+    "image": "/assets/img/cards/amadoras-ba-043.jpg",
+    "link": "https://t.me/grupo43",
+    "isNew": false,
+    "isPremium": true,
+    "description": "Conteúdo amador exclusivo",
+    "tags": [
+      "amadoras",
+      "ba",
+      "vitória-da-conquista",
+      "18+"
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Caruaru Famosas 18+ 🔞",
+    "category": "famosas",
+    "state": "PE",
+    "city": "Caruaru",
+    "views": 14360,
+    "image": "/assets/img/cards/famosas-pe-044.jpg",
+    "link": "https://t.me/grupo44",
+    "isNew": false,
+    "isPremium": true,
+    "description": "Influencers e celebridades",
+    "tags": [
+      "famosas",
+      "pe",
+      "caruaru",
+      "18+"
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Vazadas CE TOP 🏆",
+    "category": "vazadas",
+    "state": "CE",
+    "city": "Sobral",
+    "views": 3342,
+    "image": "/assets/img/cards/vazadas-ce-045.jpg",
+    "link": "https://t.me/grupo45",
+    "isNew": false,
+    "isPremium": true,
+    "description": "Pack exclusivo vazado",
+    "tags": [
+      "vazadas",
+      "ce",
+      "sobral",
+      "18+"
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Canal Universitárias Goiânia HD 📸",
+    "category": "universitarias",
+    "state": "GO",
+    "city": "Goiânia",
+    "views": 8660,
+    "image": "/assets/img/cards/universitarias-go-046.jpg",
+    "link": "https://t.me/grupo46",
+    "isNew": true,
+    "isPremium": true,
+    "description": "Grupo exclusivo com conteúdo universitário",
+    "tags": [
+      "universitarias",
+      "go",
+      "goiânia",
+      "18+"
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Cornos Ceilândia 24h 🕐",
+    "category": "cornos",
+    "state": "DF",
+    "city": "Ceilândia",
+    "views": 6569,
+    "image": "/assets/img/cards/cornos-df-047.jpg",
+    "link": "https://t.me/grupo47",
+    "isNew": true,
+    "isPremium": false,
+    "description": "Conteúdo cuckold exclusivo",
+    "tags": [
+      "cornos",
+      "df",
+      "ceilândia",
+      "18+"
+    ]
+  },
+  {
+    "id": 48,
+    "name": "VIP Amadoras ES 💳",
+    "category": "amadoras",
+    "state": "ES",
+    "city": "Serra",
+    "views": 3632,
+    "image": "/assets/img/cards/amadoras-es-048.jpg",
+    "link": "https://t.me/grupo48",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Conteúdo caseiro real",
+    "tags": [
+      "amadoras",
+      "es",
+      "serra",
+      "18+"
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Famosas São Bernardo Vazados 🔓",
+    "category": "famosas",
+    "state": "SP",
+    "city": "São Bernardo",
+    "views": 7338,
+    "image": "/assets/img/cards/famosas-sp-049.jpg",
+    "link": "https://t.me/grupo49",
+    "isNew": true,
+    "isPremium": false,
+    "description": "Vazamentos de famosas",
+    "tags": [
+      "famosas",
+      "sp",
+      "são-bernardo",
+      "18+"
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Pack Vazadas RJ 📦",
+    "category": "vazadas",
+    "state": "RJ",
+    "city": "Duque de Caxias",
+    "views": 3089,
+    "image": "/assets/img/cards/vazadas-rj-050.jpg",
+    "link": "https://t.me/grupo50",
+    "isNew": true,
+    "isPremium": true,
+    "description": "Conteúdo vazado recente",
+    "tags": [
+      "vazadas",
+      "rj",
+      "duque-de-caxias",
+      "18+"
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Universitárias Belo Horizonte Premium 🔥",
+    "category": "universitarias",
+    "state": "MG",
+    "city": "Belo Horizonte",
+    "views": 15067,
+    "image": "/assets/img/cards/universitarias-mg-051.jpg",
+    "link": "https://t.me/grupo51",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Conteúdo acadêmico +18",
+    "tags": [
+      "universitarias",
+      "mg",
+      "belo-horizonte",
+      "18+"
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Grupo Cornos SC VIP 👑",
+    "category": "cornos",
+    "state": "SC",
+    "city": "Joinville",
+    "views": 16732,
+    "image": "/assets/img/cards/cornos-sc-052.jpg",
+    "link": "https://t.me/grupo52",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Flagras reais e verificados",
+    "tags": [
+      "cornos",
+      "sc",
+      "joinville",
+      "18+"
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Amadoras Exclusivas Pelotas 💎",
+    "category": "amadoras",
+    "state": "RS",
+    "city": "Pelotas",
+    "views": 4646,
+    "image": "/assets/img/cards/amadoras-rs-053.jpg",
+    "link": "https://t.me/grupo53",
+    "isNew": false,
+    "isPremium": true,
+    "description": "Amadoras verificadas",
+    "tags": [
+      "amadoras",
+      "rs",
+      "pelotas",
+      "18+"
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Ponta Grossa Famosas 18+ 🔞",
+    "category": "famosas",
+    "state": "PR",
+    "city": "Ponta Grossa",
+    "views": 12468,
+    "image": "/assets/img/cards/famosas-pr-054.jpg",
+    "link": "https://t.me/grupo54",
+    "isNew": false,
+    "isPremium": true,
+    "description": "Conteúdo exclusivo de famosas",
+    "tags": [
+      "famosas",
+      "pr",
+      "ponta-grossa",
+      "18+"
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Vazadas BA TOP 🏆",
+    "category": "vazadas",
+    "state": "BA",
+    "city": "Lauro de Freitas",
+    "views": 14028,
+    "image": "/assets/img/cards/vazadas-ba-055.jpg",
+    "link": "https://t.me/grupo55",
+    "isNew": false,
+    "isPremium": true,
+    "description": "Vazamentos exclusivos",
+    "tags": [
+      "vazadas",
+      "ba",
+      "lauro-de-freitas",
+      "18+"
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Canal Universitárias Recife HD 📸",
+    "category": "universitarias",
+    "state": "PE",
+    "city": "Recife",
+    "views": 6511,
+    "image": "/assets/img/cards/universitarias-pe-056.jpg",
+    "link": "https://t.me/grupo56",
+    "isNew": false,
+    "isPremium": true,
+    "description": "Novinhas universitárias da região",
+    "tags": [
+      "universitarias",
+      "pe",
+      "recife",
+      "18+"
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Cornos Caucaia 24h 🕐",
+    "category": "cornos",
+    "state": "CE",
+    "city": "Caucaia",
+    "views": 8224,
+    "image": "/assets/img/cards/cornos-ce-057.jpg",
+    "link": "https://t.me/grupo57",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Casais liberais da região",
+    "tags": [
+      "cornos",
+      "ce",
+      "caucaia",
+      "18+"
+    ]
+  },
+  {
+    "id": 58,
+    "name": "VIP Amadoras GO 💳",
+    "category": "amadoras",
+    "state": "GO",
+    "city": "Anápolis",
+    "views": 8251,
+    "image": "/assets/img/cards/amadoras-go-058.jpg",
+    "link": "https://t.me/grupo58",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Conteúdo amador exclusivo",
+    "tags": [
+      "amadoras",
+      "go",
+      "anápolis",
+      "18+"
+    ]
+  },
+  {
+    "id": 59,
+    "name": "Famosas Samambaia Vazados 🔓",
+    "category": "famosas",
+    "state": "DF",
+    "city": "Samambaia",
+    "views": 15266,
+    "image": "/assets/img/cards/famosas-df-059.jpg",
+    "link": "https://t.me/grupo59",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Influencers e celebridades",
+    "tags": [
+      "famosas",
+      "df",
+      "samambaia",
+      "18+"
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Pack Vazadas ES 📦",
+    "category": "vazadas",
+    "state": "ES",
+    "city": "Linhares",
+    "views": 11706,
+    "image": "/assets/img/cards/vazadas-es-060.jpg",
+    "link": "https://t.me/grupo60",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Pack exclusivo vazado",
+    "tags": [
+      "vazadas",
+      "es",
+      "linhares",
+      "18+"
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Universitárias São Paulo Premium 🔥",
+    "category": "universitarias",
+    "state": "SP",
+    "city": "São Paulo",
+    "views": 11922,
+    "image": "/assets/img/cards/universitarias-sp-061.jpg",
+    "link": "https://t.me/grupo61",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Grupo exclusivo com conteúdo universitário",
+    "tags": [
+      "universitarias",
+      "sp",
+      "são-paulo",
+      "18+"
+    ]
+  },
+  {
+    "id": 62,
+    "name": "Grupo Cornos RJ VIP 👑",
+    "category": "cornos",
+    "state": "RJ",
+    "city": "Niterói",
+    "views": 6396,
+    "image": "/assets/img/cards/cornos-rj-062.jpg",
+    "link": "https://t.me/grupo62",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Conteúdo cuckold exclusivo",
+    "tags": [
+      "cornos",
+      "rj",
+      "niterói",
+      "18+"
+    ]
+  },
+  {
+    "id": 63,
+    "name": "Amadoras Exclusivas Contagem 💎",
+    "category": "amadoras",
+    "state": "MG",
+    "city": "Contagem",
+    "views": 3122,
+    "image": "/assets/img/cards/amadoras-mg-063.jpg",
+    "link": "https://t.me/grupo63",
+    "isNew": true,
+    "isPremium": false,
+    "description": "Conteúdo caseiro real",
+    "tags": [
+      "amadoras",
+      "mg",
+      "contagem",
+      "18+"
+    ]
+  },
+  {
+    "id": 64,
+    "name": "São José Famosas 18+ 🔞",
+    "category": "famosas",
+    "state": "SC",
+    "city": "São José",
+    "views": 14353,
+    "image": "/assets/img/cards/famosas-sc-064.jpg",
+    "link": "https://t.me/grupo64",
+    "isNew": true,
+    "isPremium": false,
+    "description": "Vazamentos de famosas",
+    "tags": [
+      "famosas",
+      "sc",
+      "são-josé",
+      "18+"
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Vazadas RS TOP 🏆",
+    "category": "vazadas",
+    "state": "RS",
+    "city": "Santa Maria",
+    "views": 3584,
+    "image": "/assets/img/cards/vazadas-rs-065.jpg",
+    "link": "https://t.me/grupo65",
+    "isNew": true,
+    "isPremium": false,
+    "description": "Conteúdo vazado recente",
+    "tags": [
+      "vazadas",
+      "rs",
+      "santa-maria",
+      "18+"
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Canal Universitárias Curitiba HD 📸",
+    "category": "universitarias",
+    "state": "PR",
+    "city": "Curitiba",
+    "views": 11978,
+    "image": "/assets/img/cards/universitarias-pr-066.jpg",
+    "link": "https://t.me/grupo66",
+    "isNew": false,
+    "isPremium": true,
+    "description": "Conteúdo acadêmico +18",
+    "tags": [
+      "universitarias",
+      "pr",
+      "curitiba",
+      "18+"
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Cornos Feira de Santana 24h 🕐",
+    "category": "cornos",
+    "state": "BA",
+    "city": "Feira de Santana",
+    "views": 12418,
+    "image": "/assets/img/cards/cornos-ba-067.jpg",
+    "link": "https://t.me/grupo67",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Flagras reais e verificados",
+    "tags": [
+      "cornos",
+      "ba",
+      "feira-de-santana",
+      "18+"
+    ]
+  },
+  {
+    "id": 68,
+    "name": "VIP Amadoras PE 💳",
+    "category": "amadoras",
+    "state": "PE",
+    "city": "Olinda",
+    "views": 16488,
+    "image": "/assets/img/cards/amadoras-pe-068.jpg",
+    "link": "https://t.me/grupo68",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Amadoras verificadas",
+    "tags": [
+      "amadoras",
+      "pe",
+      "olinda",
+      "18+"
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Famosas Maracanaú Vazados 🔓",
+    "category": "famosas",
+    "state": "CE",
+    "city": "Maracanaú",
+    "views": 13135,
+    "image": "/assets/img/cards/famosas-ce-069.jpg",
+    "link": "https://t.me/grupo69",
+    "isNew": true,
+    "isPremium": true,
+    "description": "Conteúdo exclusivo de famosas",
+    "tags": [
+      "famosas",
+      "ce",
+      "maracanaú",
+      "18+"
+    ]
+  },
+  {
+    "id": 70,
+    "name": "Pack Vazadas GO 📦",
+    "category": "vazadas",
+    "state": "GO",
+    "city": "Luziânia",
+    "views": 2780,
+    "image": "/assets/img/cards/vazadas-go-070.jpg",
+    "link": "https://t.me/grupo70",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Vazamentos exclusivos",
+    "tags": [
+      "vazadas",
+      "go",
+      "luziânia",
+      "18+"
+    ]
+  },
+  {
+    "id": 71,
+    "name": "Universitárias Brasília Premium 🔥",
+    "category": "universitarias",
+    "state": "DF",
+    "city": "Brasília",
+    "views": 5677,
+    "image": "/assets/img/cards/universitarias-df-071.jpg",
+    "link": "https://t.me/grupo71",
+    "isNew": true,
+    "isPremium": true,
+    "description": "Novinhas universitárias da região",
+    "tags": [
+      "universitarias",
+      "df",
+      "brasília",
+      "18+"
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Grupo Cornos ES VIP 👑",
+    "category": "cornos",
+    "state": "ES",
+    "city": "Vila Velha",
+    "views": 8838,
+    "image": "/assets/img/cards/cornos-es-072.jpg",
+    "link": "https://t.me/grupo72",
+    "isNew": false,
+    "isPremium": true,
+    "description": "Casais liberais da região",
+    "tags": [
+      "cornos",
+      "es",
+      "vila-velha",
+      "18+"
+    ]
+  },
+  {
+    "id": 73,
+    "name": "Amadoras Exclusivas Santos 💎",
+    "category": "amadoras",
+    "state": "SP",
+    "city": "Santos",
+    "views": 14465,
+    "image": "/assets/img/cards/amadoras-sp-073.jpg",
+    "link": "https://t.me/grupo73",
+    "isNew": false,
+    "isPremium": true,
+    "description": "Conteúdo amador exclusivo",
+    "tags": [
+      "amadoras",
+      "sp",
+      "santos",
+      "18+"
+    ]
+  },
+  {
+    "id": 74,
+    "name": "Nova Iguaçu Famosas 18+ 🔞",
+    "category": "famosas",
+    "state": "RJ",
+    "city": "Nova Iguaçu",
+    "views": 7177,
+    "image": "/assets/img/cards/famosas-rj-074.jpg",
+    "link": "https://t.me/grupo74",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Influencers e celebridades",
+    "tags": [
+      "famosas",
+      "rj",
+      "nova-iguaçu",
+      "18+"
+    ]
+  },
+  {
+    "id": 75,
+    "name": "Vazadas MG TOP 🏆",
+    "category": "vazadas",
+    "state": "MG",
+    "city": "Betim",
+    "views": 16609,
+    "image": "/assets/img/cards/vazadas-mg-075.jpg",
+    "link": "https://t.me/grupo75",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Pack exclusivo vazado",
+    "tags": [
+      "vazadas",
+      "mg",
+      "betim",
+      "18+"
+    ]
+  },
+  {
+    "id": 76,
+    "name": "Canal Universitárias Florianópolis HD 📸",
+    "category": "universitarias",
+    "state": "SC",
+    "city": "Florianópolis",
+    "views": 4966,
+    "image": "/assets/img/cards/universitarias-sc-076.jpg",
+    "link": "https://t.me/grupo76",
+    "isNew": false,
+    "isPremium": true,
+    "description": "Grupo exclusivo com conteúdo universitário",
+    "tags": [
+      "universitarias",
+      "sc",
+      "florianópolis",
+      "18+"
+    ]
+  },
+  {
+    "id": 77,
+    "name": "Cornos Caxias do Sul 24h 🕐",
+    "category": "cornos",
+    "state": "RS",
+    "city": "Caxias do Sul",
+    "views": 14520,
+    "image": "/assets/img/cards/cornos-rs-077.jpg",
+    "link": "https://t.me/grupo77",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Conteúdo cuckold exclusivo",
+    "tags": [
+      "cornos",
+      "rs",
+      "caxias-do-sul",
+      "18+"
+    ]
+  },
+  {
+    "id": 78,
+    "name": "VIP Amadoras PR 💳",
+    "category": "amadoras",
+    "state": "PR",
+    "city": "Maringá",
+    "views": 10642,
+    "image": "/assets/img/cards/amadoras-pr-078.jpg",
+    "link": "https://t.me/grupo78",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Conteúdo caseiro real",
+    "tags": [
+      "amadoras",
+      "pr",
+      "maringá",
+      "18+"
+    ]
+  },
+  {
+    "id": 79,
+    "name": "Famosas Camaçari Vazados 🔓",
+    "category": "famosas",
+    "state": "BA",
+    "city": "Camaçari",
+    "views": 15159,
+    "image": "/assets/img/cards/famosas-ba-079.jpg",
+    "link": "https://t.me/grupo79",
+    "isNew": false,
+    "isPremium": true,
+    "description": "Vazamentos de famosas",
+    "tags": [
+      "famosas",
+      "ba",
+      "camaçari",
+      "18+"
+    ]
+  },
+  {
+    "id": 80,
+    "name": "Pack Vazadas PE 📦",
+    "category": "vazadas",
+    "state": "PE",
+    "city": "Petrolina",
+    "views": 10267,
+    "image": "/assets/img/cards/vazadas-pe-080.jpg",
+    "link": "https://t.me/grupo80",
+    "isNew": true,
+    "isPremium": true,
+    "description": "Conteúdo vazado recente",
+    "tags": [
+      "vazadas",
+      "pe",
+      "petrolina",
+      "18+"
+    ]
+  },
+  {
+    "id": 81,
+    "name": "Universitárias Fortaleza Premium 🔥",
+    "category": "universitarias",
+    "state": "CE",
+    "city": "Fortaleza",
+    "views": 10036,
+    "image": "/assets/img/cards/universitarias-ce-081.jpg",
+    "link": "https://t.me/grupo81",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Conteúdo acadêmico +18",
+    "tags": [
+      "universitarias",
+      "ce",
+      "fortaleza",
+      "18+"
+    ]
+  },
+  {
+    "id": 82,
+    "name": "Grupo Cornos GO VIP 👑",
+    "category": "cornos",
+    "state": "GO",
+    "city": "Aparecida de Goiânia",
+    "views": 12100,
+    "image": "/assets/img/cards/cornos-go-082.jpg",
+    "link": "https://t.me/grupo82",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Flagras reais e verificados",
+    "tags": [
+      "cornos",
+      "go",
+      "aparecida-de-goiânia",
+      "18+"
+    ]
+  },
+  {
+    "id": 83,
+    "name": "Amadoras Exclusivas Taguatinga 💎",
+    "category": "amadoras",
+    "state": "DF",
+    "city": "Taguatinga",
+    "views": 9209,
+    "image": "/assets/img/cards/amadoras-df-083.jpg",
+    "link": "https://t.me/grupo83",
+    "isNew": false,
+    "isPremium": true,
+    "description": "Amadoras verificadas",
+    "tags": [
+      "amadoras",
+      "df",
+      "taguatinga",
+      "18+"
+    ]
+  },
+  {
+    "id": 84,
+    "name": "Cariacica Famosas 18+ 🔞",
+    "category": "famosas",
+    "state": "ES",
+    "city": "Cariacica",
+    "views": 10889,
+    "image": "/assets/img/cards/famosas-es-084.jpg",
+    "link": "https://t.me/grupo84",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Conteúdo exclusivo de famosas",
+    "tags": [
+      "famosas",
+      "es",
+      "cariacica",
+      "18+"
+    ]
+  },
+  {
+    "id": 85,
+    "name": "Vazadas SP TOP 🏆",
+    "category": "vazadas",
+    "state": "SP",
+    "city": "Osasco",
+    "views": 12196,
+    "image": "/assets/img/cards/vazadas-sp-085.jpg",
+    "link": "https://t.me/grupo85",
+    "isNew": true,
+    "isPremium": true,
+    "description": "Vazamentos exclusivos",
+    "tags": [
+      "vazadas",
+      "sp",
+      "osasco",
+      "18+"
+    ]
+  },
+  {
+    "id": 86,
+    "name": "Canal Universitárias Rio de Janeiro HD 📸",
+    "category": "universitarias",
+    "state": "RJ",
+    "city": "Rio de Janeiro",
+    "views": 12876,
+    "image": "/assets/img/cards/universitarias-rj-086.jpg",
+    "link": "https://t.me/grupo86",
+    "isNew": false,
+    "isPremium": true,
+    "description": "Novinhas universitárias da região",
+    "tags": [
+      "universitarias",
+      "rj",
+      "rio-de-janeiro",
+      "18+"
+    ]
+  },
+  {
+    "id": 87,
+    "name": "Cornos Uberlândia 24h 🕐",
+    "category": "cornos",
+    "state": "MG",
+    "city": "Uberlândia",
+    "views": 2743,
+    "image": "/assets/img/cards/cornos-mg-087.jpg",
+    "link": "https://t.me/grupo87",
+    "isNew": true,
+    "isPremium": true,
+    "description": "Casais liberais da região",
+    "tags": [
+      "cornos",
+      "mg",
+      "uberlândia",
+      "18+"
+    ]
+  },
+  {
+    "id": 88,
+    "name": "VIP Amadoras SC 💳",
+    "category": "amadoras",
+    "state": "SC",
+    "city": "Blumenau",
+    "views": 4836,
+    "image": "/assets/img/cards/amadoras-sc-088.jpg",
+    "link": "https://t.me/grupo88",
+    "isNew": false,
+    "isPremium": true,
+    "description": "Conteúdo amador exclusivo",
+    "tags": [
+      "amadoras",
+      "sc",
+      "blumenau",
+      "18+"
+    ]
+  },
+  {
+    "id": 89,
+    "name": "Famosas Canoas Vazados 🔓",
+    "category": "famosas",
+    "state": "RS",
+    "city": "Canoas",
+    "views": 12792,
+    "image": "/assets/img/cards/famosas-rs-089.jpg",
+    "link": "https://t.me/grupo89",
+    "isNew": true,
+    "isPremium": false,
+    "description": "Influencers e celebridades",
+    "tags": [
+      "famosas",
+      "rs",
+      "canoas",
+      "18+"
+    ]
+  },
+  {
+    "id": 90,
+    "name": "Pack Vazadas PR 📦",
+    "category": "vazadas",
+    "state": "PR",
+    "city": "Cascavel",
+    "views": 11040,
+    "image": "/assets/img/cards/vazadas-pr-090.jpg",
+    "link": "https://t.me/grupo90",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Pack exclusivo vazado",
+    "tags": [
+      "vazadas",
+      "pr",
+      "cascavel",
+      "18+"
+    ]
+  },
+  {
+    "id": 91,
+    "name": "Universitárias Salvador Premium 🔥",
+    "category": "universitarias",
+    "state": "BA",
+    "city": "Salvador",
+    "views": 9736,
+    "image": "/assets/img/cards/universitarias-ba-091.jpg",
+    "link": "https://t.me/grupo91",
+    "isNew": false,
+    "isPremium": true,
+    "description": "Grupo exclusivo com conteúdo universitário",
+    "tags": [
+      "universitarias",
+      "ba",
+      "salvador",
+      "18+"
+    ]
+  },
+  {
+    "id": 92,
+    "name": "Grupo Cornos PE VIP 👑",
+    "category": "cornos",
+    "state": "PE",
+    "city": "Jaboatão dos Guararapes",
+    "views": 2265,
+    "image": "/assets/img/cards/cornos-pe-092.jpg",
+    "link": "https://t.me/grupo92",
+    "isNew": true,
+    "isPremium": true,
+    "description": "Conteúdo cuckold exclusivo",
+    "tags": [
+      "cornos",
+      "pe",
+      "jaboatão-dos-guararapes",
+      "18+"
+    ]
+  },
+  {
+    "id": 93,
+    "name": "Amadoras Exclusivas Juazeiro do Norte 💎",
+    "category": "amadoras",
+    "state": "CE",
+    "city": "Juazeiro do Norte",
+    "views": 13010,
+    "image": "/assets/img/cards/amadoras-ce-093.jpg",
+    "link": "https://t.me/grupo93",
+    "isNew": false,
+    "isPremium": true,
+    "description": "Conteúdo caseiro real",
+    "tags": [
+      "amadoras",
+      "ce",
+      "juazeiro-do-norte",
+      "18+"
+    ]
+  },
+  {
+    "id": 94,
+    "name": "Rio Verde Famosas 18+ 🔞",
+    "category": "famosas",
+    "state": "GO",
+    "city": "Rio Verde",
+    "views": 10656,
+    "image": "/assets/img/cards/famosas-go-094.jpg",
+    "link": "https://t.me/grupo94",
+    "isNew": false,
+    "isPremium": true,
+    "description": "Vazamentos de famosas",
+    "tags": [
+      "famosas",
+      "go",
+      "rio-verde",
+      "18+"
+    ]
+  },
+  {
+    "id": 95,
+    "name": "Vazadas DF TOP 🏆",
+    "category": "vazadas",
+    "state": "DF",
+    "city": "Águas Claras",
+    "views": 8138,
+    "image": "/assets/img/cards/vazadas-df-095.jpg",
+    "link": "https://t.me/grupo95",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Conteúdo vazado recente",
+    "tags": [
+      "vazadas",
+      "df",
+      "águas-claras",
+      "18+"
+    ]
+  },
+  {
+    "id": 96,
+    "name": "Canal Universitárias Vitória HD 📸",
+    "category": "universitarias",
+    "state": "ES",
+    "city": "Vitória",
+    "views": 9460,
+    "image": "/assets/img/cards/universitarias-es-096.jpg",
+    "link": "https://t.me/grupo96",
+    "isNew": true,
+    "isPremium": true,
+    "description": "Conteúdo acadêmico +18",
+    "tags": [
+      "universitarias",
+      "es",
+      "vitória",
+      "18+"
+    ]
+  },
+  {
+    "id": 97,
+    "name": "Cornos Campinas 24h 🕐",
+    "category": "cornos",
+    "state": "SP",
+    "city": "Campinas",
+    "views": 9993,
+    "image": "/assets/img/cards/cornos-sp-097.jpg",
+    "link": "https://t.me/grupo97",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Flagras reais e verificados",
+    "tags": [
+      "cornos",
+      "sp",
+      "campinas",
+      "18+"
+    ]
+  },
+  {
+    "id": 98,
+    "name": "VIP Amadoras RJ 💳",
+    "category": "amadoras",
+    "state": "RJ",
+    "city": "Petrópolis",
+    "views": 11789,
+    "image": "/assets/img/cards/amadoras-rj-098.jpg",
+    "link": "https://t.me/grupo98",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Amadoras verificadas",
+    "tags": [
+      "amadoras",
+      "rj",
+      "petrópolis",
+      "18+"
+    ]
+  },
+  {
+    "id": 99,
+    "name": "Famosas Juiz de Fora Vazados 🔓",
+    "category": "famosas",
+    "state": "MG",
+    "city": "Juiz de Fora",
+    "views": 4610,
+    "image": "/assets/img/cards/famosas-mg-099.jpg",
+    "link": "https://t.me/grupo99",
+    "isNew": true,
+    "isPremium": true,
+    "description": "Conteúdo exclusivo de famosas",
+    "tags": [
+      "famosas",
+      "mg",
+      "juiz-de-fora",
+      "18+"
+    ]
+  },
+  {
+    "id": 100,
+    "name": "Pack Vazadas SC 📦",
+    "category": "vazadas",
+    "state": "SC",
+    "city": "Chapecó",
+    "views": 6609,
+    "image": "/assets/img/cards/vazadas-sc-100.jpg",
+    "link": "https://t.me/grupo100",
+    "isNew": false,
+    "isPremium": false,
+    "description": "Vazamentos exclusivos",
+    "tags": [
+      "vazadas",
+      "sc",
+      "chapecó",
+      "18+"
+    ]
+  }
+]

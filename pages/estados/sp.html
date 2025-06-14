@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>São Paulo - Grupos Exclusivos do Telegram</title>
+    <meta name="description" content="Grupos adultos de São Paulo no Telegram. Capital, interior e região metropolitana.">
+    <link rel="canonical" href="https://portalx.com/sp/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="/assets/css/animations.css">
+    <style>
+        body {
+            background: #0a0a0a;
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to bottom, rgba(10, 10, 10, 0.95), transparent);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 2rem;
+        }
+        
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .logo span {
+            background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-link {
+            color: #d4d4d4;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: #dc2626;
+        }
+        
+        .filters-toggle {
+            background: rgba(220, 38, 38, 0.1);
+            border: 1px solid rgba(220, 38, 38, 0.3);
+            color: #dc2626;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .filters-toggle:hover {
+            background: rgba(220, 38, 38, 0.2);
+        }
+        
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+        
+        .filters-sidebar {
+            position: fixed;
+            left: -300px;
+            top: 0;
+            width: 300px;
+            height: 100vh;
+            background: #111;
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 6rem 2rem 2rem;
+            overflow-y: auto;
+            transition: left 0.3s;
+            z-index: 999;
+        }
+        
+        .filters-sidebar.active {
+            left: 0;
+        }
+        
+        .filter-section {
+            margin-bottom: 2rem;
+        }
+        
+        .filter-title {
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #dc2626;
+        }
+        
+        .filter-option {
+            display: block;
+            padding: 0.5rem;
+            color: #a3a3a3;
+            cursor: pointer;
+            transition: all 0.3s;
+            border-radius: 4px;
+        }
+        
+        .filter-option:hover {
+            background: rgba(220, 38, 38, 0.1);
+            color: #fff;
+        }
+        
+        .filter-option.active {
+            background: rgba(220, 38, 38, 0.2);
+            color: #dc2626;
+        }
+        
+        main {
+            margin-top: 80px;
+            min-height: calc(100vh - 80px);
+        }
+        
+        .breadcrumb {
+            padding: 1rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            font-size: 0.875rem;
+            color: #737373;
+        }
+        
+        .breadcrumb a {
+            color: #dc2626;
+            text-decoration: none;
+        }
+        
+        .state-hero {
+            position: relative;
+            padding: 6rem 2rem 4rem;
+            margin-bottom: 3rem;
+            overflow: hidden;
+        }
+        
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(220, 38, 38, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 20% 50%, rgba(220, 38, 38, 0.15) 0%, transparent 50%);
+            z-index: -1;
+        }
+        
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .state-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(220, 38, 38, 0.1);
+            border: 1px solid rgba(220, 38, 38, 0.3);
+            border-radius: 50px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .badge-icon {
+            font-size: 1.5rem;
+        }
+        
+        .badge-text {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #dc2626;
+        }
+        
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.1;
+            background: linear-gradient(135deg, #fff 0%, #dc2626 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: #a3a3a3;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+        
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            display: block;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #dc2626;
+        }
+        
+        .stat-label {
+            font-size: 0.875rem;
+            color: #737373;
+        }
+        
+        .content-wrapper {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .cities-section {
+            margin-bottom: 3rem;
+        }
+        
+        .cities-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .cities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        
+        .city-card {
+            background: rgba(220, 38, 38, 0.05);
+            border: 1px solid rgba(220, 38, 38, 0.2);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.3s;
+            text-align: center;
+        }
+        
+        .city-card:hover {
+            background: rgba(220, 38, 38, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        .city-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .city-card span {
+            color: #a3a3a3;
+            font-size: 0.875rem;
+        }
+        
+        .filter-bar-horizontal {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: rgba(17, 17, 17, 0.5);
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .filter-pills {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .pill {
+            padding: 0.5rem 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 50px;
+            color: #d4d4d4;
+            font-size: 0.875rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: none;
+        }
+        
+        .pill:hover {
+            background: rgba(220, 38, 38, 0.1);
+            border-color: rgba(220, 38, 38, 0.3);
+            color: #fff;
+        }
+        
+        .pill.active {
+            background: rgba(220, 38, 38, 0.2);
+            border-color: rgba(220, 38, 38, 0.5);
+            color: #dc2626;
+        }
+        
+        .results-counter {
+            font-size: 0.875rem;
+            color: #737373;
+        }
+        
+        .results-counter span {
+            color: #dc2626;
+            font-weight: 600;
+        }
+        
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .card {
+            background: #111;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s;
+            cursor: pointer;
+            position: relative;
+            border: 1px solid transparent;
+        }
+        
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(220, 38, 38, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        
+        .card-image-wrapper {
+            position: relative;
+            overflow: hidden;
+            aspect-ratio: 16/9;
+        }
+        
+        .card-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: blur(8px);
+            transition: filter 0.3s;
+        }
+        
+        .card:hover .card-image {
+            filter: blur(4px);
+        }
+        
+        .card-lock {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            color: #dc2626;
+            background: rgba(0, 0, 0, 0.8);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .card-content {
+            padding: 1rem;
+        }
+        
+        .card-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .card-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.875rem;
+            color: #737373;
+        }
+        
+        .card-location {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+        
+        .card-views {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+        
+        .card-cta {
+            margin-top: 1rem;
+            background: #dc2626;
+            color: white;
+            border: none;
+            padding: 0.75rem;
+            width: 100%;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .card-cta:hover {
+            background: #b91c1c;
+        }
+        
+        .load-more-container {
+            text-align: center;
+            margin: 3rem 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: #dc2626;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: center;
+        }
+        
+        .btn:hover {
+            background: #b91c1c;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(220, 38, 38, 0.3);
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal.active {
+            display: flex;
+        }
+        
+        .modal-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(5px);
+        }
+        
+        .modal-content {
+            position: relative;
+            background: linear-gradient(135deg, #1a1a1a 0%, #111 100%);
+            border-radius: 20px;
+            padding: 0;
+            max-width: 500px;
+            width: 90%;
+            border: 1px solid rgba(220, 38, 38, 0.3);
+            overflow: hidden;
+            animation: modalSlide 0.3s ease-out;
+            z-index: 1;
+        }
+        
+        @keyframes modalSlide {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.3s;
+            z-index: 10;
+        }
+        
+        .modal-close:hover {
+            background: rgba(220, 38, 38, 0.3);
+        }
+        
+        .modal-header {
+            padding: 2rem 2rem 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .modal-header h2 {
+            font-size: 1.5rem;
+            color: #dc2626;
+        }
+        
+        .modal-body {
+            padding: 2rem;
+        }
+        
+        .modal-group-name {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .modal-warning {
+            color: #a3a3a3;
+            line-height: 1.6;
+        }
+        
+        .modal-footer {
+            padding: 1rem 2rem 2rem;
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .modal-btn {
+            flex: 1;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .modal-btn-primary {
+            background: #dc2626;
+            color: white;
+        }
+        
+        .modal-btn-secondary {
+            background: #262626;
+            color: #a3a3a3;
+        }
+        
+        @media (max-width: 992px) {
+            nav {
+                display: none;
+            }
+            
+            .mobile-menu-toggle {
+                display: block;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .hero-stats {
+                gap: 1.5rem;
+            }
+            
+            .stat-number {
+                font-size: 1.75rem;
+            }
+            
+            .filter-bar-horizontal {
+                flex-direction: column;
+                gap: 1rem;
+                align-items: stretch;
+            }
+            
+            .card-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+            
+            .cities-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png">
+    <meta name="theme-color" content="#e50914">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="/pages/home.html">🔞 <span>Portal Secreto X</span></a>
+            </div>
+            <nav>
+                <a href="/pages/home.html" class="nav-link">Início</a>
+                <a href="#categorias" class="nav-link">Categorias</a>
+                <a href="#cidades" class="nav-link">Cidades</a>
+                <a href="#premium" class="nav-link">Premium</a>
+                <button class="filters-toggle" onclick="toggleFilters()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="4" y1="6" x2="20" y2="6"></line>
+                        <line x1="4" y1="12" x2="20" y2="12"></line>
+                        <line x1="4" y1="18" x2="20" y2="18"></line>
+                    </svg>
+                    Filtros
+                </button>
+            </nav>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div class="filters-sidebar" id="filtersSidebar">
+        <div class="filter-section">
+            <h3 class="filter-title">REGIÕES</h3>
+            <div class="filter-option active" data-region="all">Todas Regiões</div>
+            <div class="filter-option" data-region="capital">Capital</div>
+            <div class="filter-option" data-region="interior">Interior</div>
+            <div class="filter-option" data-region="litoral">Litoral</div>
+            <div class="filter-option" data-region="abc">ABC Paulista</div>
+        </div>
+        <div class="filter-section">
+            <h3 class="filter-title">CATEGORIAS</h3>
+            <div class="filter-option" data-category="universitarias">Universitárias</div>
+            <div class="filter-option" data-category="cornos">Cornos</div>
+            <div class="filter-option" data-category="amadoras">Amadoras</div>
+            <div class="filter-option" data-category="famosas">Famosas</div>
+            <div class="filter-option" data-category="vazadas">Vazadas</div>
+        </div>
+        <div class="filter-section">
+            <h3 class="filter-title">ORDENAR</h3>
+            <div class="filter-option active" data-sort="views">Mais vistos</div>
+            <div class="filter-option" data-sort="new">Mais recentes</div>
+            <div class="filter-option" data-sort="hot">Em alta 🔥</div>
+        </div>
+    </div>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="/pages/home.html">Início</a> / <a href="#">Estados</a> / São Paulo
+        </div>
+
+        <div class="state-hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <div class="state-badge">
+                    <span class="badge-icon">📍</span>
+                    <span class="badge-text">Estado</span>
+                </div>
+                <h1 class="hero-title">São Paulo</h1>
+                <p class="hero-subtitle">O maior acervo de grupos adultos do Brasil</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">127</span>
+                        <span class="stat-label">Grupos ativos</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">45.3K</span>
+                        <span class="stat-label">Membros</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Novos conteúdos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="cities-section">
+                <h2>Principais Cidades</h2>
+                <div class="cities-grid">
+                    <a href="/c/sp-capital" class="city-card">
+                        <h3>São Paulo Capital</h3>
+                        <span>68 grupos</span>
+                    </a>
+                    <a href="/c/campinas-sp" class="city-card">
+                        <h3>Campinas</h3>
+                        <span>23 grupos</span>
+                    </a>
+                    <a href="/c/santos-sp" class="city-card">
+                        <h3>Santos</h3>
+                        <span>18 grupos</span>
+                    </a>
+                    <a href="/c/guarulhos-sp" class="city-card">
+                        <h3>Guarulhos</h3>
+                        <span>14 grupos</span>
+                    </a>
+                    <a href="/c/abc-sp" class="city-card">
+                        <h3>ABC Paulista</h3>
+                        <span>21 grupos</span>
+                    </a>
+                    <a href="/c/sorocaba-sp" class="city-card">
+                        <h3>Sorocaba</h3>
+                        <span>12 grupos</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="filter-bar-horizontal">
+                <div class="filter-pills">
+                    <button class="pill active" data-filter="all">Todos</button>
+                    <button class="pill" data-filter="capital">Capital</button>
+                    <button class="pill" data-filter="interior">Interior</button>
+                    <button class="pill" data-filter="litoral">Litoral</button>
+                    <button class="pill" data-filter="abc">ABC</button>
+                </div>
+                <div class="results-counter">
+                    <span id="resultsCount">127</span> grupos encontrados
+                </div>
+            </div>
+
+            <div class="cards-container">
+                <div class="card-grid" id="stateGrid"></div>
+                <div class="load-more-container">
+                    <button class="btn" id="loadMoreState">
+                        Ver mais grupos de SP
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal" id="groupModal">
+        <div class="modal-overlay" onclick="closeModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <div class="modal-header">
+                <h2>🔓 Desbloquear Grupo</h2>
+            </div>
+            <div class="modal-body">
+                <p class="modal-group-name" id="modalGroupName"></p>
+                <p class="modal-warning">Você está prestes a acessar conteúdo adulto exclusivo. Confirma que deseja continuar?</p>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-btn modal-btn-primary" onclick="accessGroup()">
+                    Acessar agora
+                </button>
+                <button class="modal-btn modal-btn-secondary" onclick="closeModal()">
+                    Cancelar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/assets/js/image-loader.js"></script>
+    <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/cards.js"></script>
+    <script>
+        const stateGroups = [
+            {
+                id: 700,
+                name: "Universitárias USP SP",
+                category: "universitarias",
+                city: "São Paulo",
+                region: "capital",
+                views: 18543,
+                isNew: true,
+                isPremium: true,
+                link: `https://t.me/sp700`
+            },
+            {
+                id: 701,
+                name: "Cornos Capital Paulista",
+                category: "cornos",
+                city: "São Paulo",
+                region: "capital",
+                views: 15432,
+                isNew: false,
+                isPremium: false,
+                link: `https://t.me/sp701`
+            },
+            {
+                id: 702,
+                name: "Amadoras Santos SP",
+                category: "amadoras",
+                city: "Santos",
+                region: "litoral",
+                views: 12987,
+                isNew: true,
+                isPremium: false,
+                link: `https://t.me/sp702`
+            }
+        ];
+
+        for (let i = 4; i <= 20; i++) {
+            stateGroups.push({
+                id: 700 + i,
+                name: `${["Universitárias", "Cornos", "Amadoras", "Famosas", "Vazadas"][i % 5]} ${["São Paulo", "Campinas", "Santos", "Guarulhos", "ABC"][i % 5]} ${i}`,
+                category: ["universitarias", "cornos", "amadoras", "famosas", "vazadas"][i % 5],
+                city: ["São Paulo", "Campinas", "Santos", "Guarulhos", "São Bernardo"][i % 5],
+                region: ["capital", "interior", "litoral", "abc"][i % 4],
+                views: Math.floor(Math.random() * 20000) + 3000,
+                isNew: Math.random() > 0.6,
+                isPremium: Math.random() > 0.5,
+                link: `https://t.me/sp${700 + i}`
+            });
+        }
+
+        window.groupsData = stateGroups;
+        
+        function renderCards(groups) {
+            const grid = document.getElementById('stateGrid');
+            grid.innerHTML = '';
+            
+            groups.forEach(group => {
+                const card = document.createElement('div');
+                card.className = 'card fade-in';
+                card.onclick = () => {
+                    window.currentGroup = group;
+                    document.getElementById('modalGroupName').textContent = group.name;
+                    document.getElementById('groupModal').classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                };
+                
+                card.innerHTML = `
+                    <div class="card-image-wrapper">
+                        <img src="${ImageAssets.cards.getRandomCard()}" alt="${group.name}" class="card-image">
+                        <div class="card-lock">🔒</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">${group.name}</h3>
+                        <div class="card-meta">
+                            <span class="card-location">📍 ${group.city}</span>
+                            <span class="card-views">👁 ${group.views.toLocaleString()}</span>
+                        </div>
+                        <button class="card-cta">Desbloquear 🔥</button>
+                    </div>
+                `;
+                
+                grid.appendChild(card);
+            });
+        }
+        
+        renderCards(stateGroups.slice(0, 12));
+
+        function toggleFilters() {
+            document.getElementById('filtersSidebar').classList.toggle('active');
+        }
+
+        function closeModal() {
+            document.getElementById('groupModal').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function accessGroup() {
+            if (window.currentGroup) {
+                window.open(window.currentGroup.link, '_blank');
+                closeModal();
+            }
+        }
+
+        document.querySelectorAll('.pill').forEach(pill => {
+            pill.addEventListener('click', function() {
+                document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+                this.classList.add('active');
+                
+                const filter = this.dataset.filter;
+                let filtered = stateGroups;
+                
+                if (filter !== 'all') {
+                    filtered = stateGroups.filter(g => g.region === filter);
+                }
+                
+                document.getElementById('resultsCount').textContent = filtered.length;
+                renderCards(filtered.slice(0, 12));
+            });
+        });
+
+        document.getElementById('loadMoreState').addEventListener('click', function() {
+            const currentCards = document.querySelectorAll('.card').length;
+            const moreGroups = stateGroups.slice(currentCards, currentCards + 6);
+            const grid = document.getElementById('stateGrid');
+            
+            moreGroups.forEach(group => {
+                const card = document.createElement('div');
+                card.className = 'card fade-in';
+                card.onclick = () => {
+                    window.currentGroup = group;
+                    document.getElementById('modalGroupName').textContent = group.name;
+                    document.getElementById('groupModal').classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                };
+                
+                card.innerHTML = `
+                    <div class="card-image-wrapper">
+                        <img src="${ImageAssets.cards.getRandomCard()}" alt="${group.name}" class="card-image">
+                        <div class="card-lock">🔒</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">${group.name}</h3>
+                        <div class="card-meta">
+                            <span class="card-location">📍 ${group.city}</span>
+                            <span class="card-views">👁 ${group.views.toLocaleString()}</span>
+                        </div>
+                        <button class="card-cta">Desbloquear 🔥</button>
+                    </div>
+                `;
+                
+                grid.appendChild(card);
+            });
+        });
+    </script>
+    <script src="/assets/js/search.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js');
+        }
+    </script>
+    <script src="/assets/js/funnel-system.js"></script>
+    <script src="/assets/js/rotation-system.js"></script>
+</body>
+</html>

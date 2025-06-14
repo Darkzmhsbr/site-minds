@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta - Portal Secreto X</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            color: #fff; 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .register-container {
+            background: rgba(20, 20, 20, 0.9);
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            max-width: 450px;
+            width: 100%;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .logo-icon {
+            background: #dc2626;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin: 0 auto 1rem;
+        }
+        .title {
+            color: #dc2626;
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+        .subtitle {
+            color: #a3a3a3;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #a3a3a3;
+            font-weight: 500;
+        }
+        input {
+            width: 100%;
+            padding: 1rem;
+            background: rgba(31, 31, 31, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            color: #fff;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        input:focus {
+            outline: none;
+            border-color: #dc2626;
+            box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.2);
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            background: linear-gradient(135deg, #dc2626, #b91c1c);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+        .submit-btn:hover {
+            background: linear-gradient(135deg, #b91c1c, #991b1b);
+            transform: translateY(-1px);
+        }
+        .submit-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        .message {
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            display: none;
+        }
+        .message.success {
+            background: rgba(34, 197, 94, 0.2);
+            border: 1px solid #22c55e;
+            color: #22c55e;
+        }
+        .message.error {
+            background: rgba(239, 68, 68, 0.2);
+            border: 1px solid #ef4444;
+            color: #ef4444;
+        }
+        .message.info {
+            background: rgba(59, 130, 246, 0.2);
+            border: 1px solid #3b82f6;
+            color: #3b82f6;
+        }
+        .links {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .links a {
+            color: #dc2626;
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: opacity 0.3s ease;
+        }
+        .links a:hover {
+            opacity: 0.8;
+        }
+        .debug-info {
+            background: rgba(31, 31, 31, 0.5);
+            padding: 1rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            font-size: 0.875rem;
+            color: #a3a3a3;
+        }
+        .password-requirements {
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+        .terms {
+            font-size: 0.85rem;
+            color: #a3a3a3;
+            margin-top: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <div class="logo">
+            <div class="logo-icon">🔞</div>
+            <h1 class="title">Criar Conta</h1>
+            <p class="subtitle">Acesso exclusivo ao Portal Secreto X</p>
+        </div>
+
+        <div id="debugInfo" class="debug-info">
+            <strong>🔧 Status:</strong> <span id="debugStatus">Carregando...</span><br>
+            <strong>📡 API:</strong> <span id="debugApi">/api</span>
+        </div>
+
+        <form id="registerForm">
+            <div class="form-group">
+                <label for="name">Nome completo</label>
+                <input type="text" id="name" name="name" required placeholder="Digite seu nome completo">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required placeholder="Digite seu melhor e-mail">
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required placeholder="Crie uma senha segura">
+                <div class="password-requirements">
+                    Mínimo 6 caracteres
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirmar senha</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirme sua senha">
+            </div>
+
+            <div id="message" class="message"></div>
+
+            <button type="submit" id="submitBtn" class="submit-btn">Cadastrar</button>
+        </form>
+
+        <div class="terms">
+            Ao criar uma conta, você concorda com nossos termos de uso.<br>
+            Sua conta será aprovada em até 24h.
+        </div>
+
+        <div class="links">
+            <a href="/login">Já tem conta? Faça login</a> |
+            <a href="/">Voltar ao site</a>
+        </div>
+    </div>
+
+    <!-- CARREGAR AUTH SYSTEM PRIMEIRO -->
+    <script src="/assets/js/auth-system.js"></script>
+    
+    <script>
+        // Aguardar o AuthSystem carregar
+        document.addEventListener('DOMContentLoaded', async () => {
+            console.log('📄 Register page carregada');
+            
+            // Debug info
+            document.getElementById('debugApi').textContent = window.AuthSystem ? window.AuthSystem.API_URL : 'AuthSystem não carregado';
+            
+            // Verificar se AuthSystem carregou
+            if (window.AuthSystem) {
+                document.getElementById('debugStatus').textContent = 'AuthSystem carregado ✅';
+                
+                // Testar API
+                const health = await window.AuthSystem.checkAPIHealth();
+                if (health.success) {
+                    document.getElementById('debugStatus').textContent = 'API funcionando ✅';
+                } else {
+                    document.getElementById('debugStatus').textContent = 'API com problemas ❌';
+                }
+            } else {
+                document.getElementById('debugStatus').textContent = 'AuthSystem falhou ❌';
+                showMessage('Erro: Sistema de autenticação não carregou', 'error');
+            }
+        });
+
+        // Form de registro
+        document.getElementById('registerForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            if (!window.AuthSystem) {
+                showMessage('Sistema de autenticação não está disponível', 'error');
+                return;
+            }
+
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const submitBtn = document.getElementById('submitBtn');
+
+            // Validações
+            if (!name || !email || !password || !confirmPassword) {
+                showMessage('Por favor, preencha todos os campos', 'error');
+                return;
+            }
+
+            if (name.length < 2) {
+                showMessage('Nome deve ter pelo menos 2 caracteres', 'error');
+                return;
+            }
+
+            if (password.length < 6) {
+                showMessage('Senha deve ter pelo menos 6 caracteres', 'error');
+                return;
+            }
+
+            if (password !== confirmPassword) {
+                showMessage('As senhas não coincidem', 'error');
+                return;
+            }
+
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                showMessage('Por favor, digite um e-mail válido', 'error');
+                return;
+            }
+
+            // Loading state
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Cadastrando...';
+            showMessage('Criando sua conta...', 'info');
+
+            try {
+                console.log('📝 Tentando fazer registro...');
+                const result = await window.AuthSystem.register(email, password, name);
+                
+                if (result.success) {
+                    showMessage('Conta criada com sucesso! Aguarde aprovação para fazer login.', 'success');
+                    
+                    // Limpar formulário
+                    document.getElementById('registerForm').reset();
+                    
+                    // Redirecionar após sucesso
+                    setTimeout(() => {
+                        window.location.href = '/login';
+                    }, 3000);
+                } else {
+                    showMessage(result.error || 'Erro no cadastro', 'error');
+                }
+            } catch (error) {
+                console.error('❌ Erro no registro:', error);
+                showMessage('Erro inesperado: ' + error.message, 'error');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Cadastrar';
+            }
+        });
+
+        // Validação em tempo real das senhas
+        document.getElementById('confirmPassword').addEventListener('input', (e) => {
+            const password = document.getElementById('password').value;
+            const confirmPassword = e.target.value;
+            
+            if (confirmPassword && password !== confirmPassword) {
+                e.target.style.borderColor = '#ef4444';
+            } else {
+                e.target.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+            }
+        });
+
+        function showMessage(text, type) {
+            const messageEl = document.getElementById('message');
+            messageEl.textContent = text;
+            messageEl.className = `message ${type}`;
+            messageEl.style.display = 'block';
+        }
+
+        function hideMessage() {
+            document.getElementById('message').style.display = 'none';
+        }
+
+        // Auto-hide messages após 5 segundos (exceto success)
+        setInterval(() => {
+            const messageEl = document.getElementById('message');
+            if (messageEl.style.display === 'block' && !messageEl.classList.contains('success')) {
+                setTimeout(hideMessage, 5000);
+            }
+        }, 100);
+    </script>
+</body>
+</html>

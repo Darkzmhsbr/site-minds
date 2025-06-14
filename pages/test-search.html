@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { background: #000; color: #fff; font-family: monospace; padding: 2rem; }
+        pre { background: #111; padding: 1rem; border-radius: 4px; }
+        .ok { color: #0f0; }
+        .err { color: #f00; }
+    </style>
+</head>
+<body>
+    <h1>Debug Search</h1>
+    <pre id="log"></pre>
+    <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/search.js"></script>
+    <script>
+        const log = document.getElementById('log');
+        
+        setTimeout(() => {
+            const tests = [
+                ['window.gruposData existe', !!window.gruposData],
+                ['window.gruposData é array', Array.isArray(window.gruposData)],
+                ['Quantidade de grupos', window.gruposData?.length || 0],
+                ['Busca input existe', !!document.getElementById('searchInput')],
+                ['Busca container existe', !!document.querySelector('.search-container')]
+            ];
+            
+            log.innerHTML = tests.map(([test, result]) => 
+                `<span class="${result ? 'ok' : 'err'}">${result ? '✓' : '✗'} ${test}: ${result}</span>`
+            ).join('\n');
+        }, 1000);
+    </script>
+</body>
+</html>
