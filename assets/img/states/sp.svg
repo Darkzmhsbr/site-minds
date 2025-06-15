@@ -1,0 +1,4 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30,20 L70,15 L85,40 L75,70 L50,85 L25,75 L15,45 Z" fill="#dc2626" opacity="0.3" stroke="#dc2626" stroke-width="2"></path>
+                    <text x="50" y="55" text-anchor="middle" fill="#dc2626" font-weight="bold">SP</text>
+                </svg>

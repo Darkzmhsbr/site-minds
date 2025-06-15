@@ -1,0 +1,4 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 10 L61 39 L90 39 L67 57 L78 86 L50 68 L22 86 L33 57 L10 39 L39 39 Z" fill="#dc2626" opacity="0.2"></path>
+                    <text x="50" y="60" text-anchor="middle" font-size="40">⭐</text>
+                </svg>

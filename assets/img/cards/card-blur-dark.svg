@@ -1,0 +1,14 @@
+<svg viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <filter id="blur2">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="10"></feGaussianBlur>
+                        </filter>
+                        <radialGradient id="grad2">
+                            <stop offset="0%" style="stop-color:#ef4444;stop-opacity:0.6"></stop>
+                            <stop offset="100%" style="stop-color:#991b1b;stop-opacity:0.9"></stop>
+                        </radialGradient>
+                    </defs>
+                    <rect width="280" height="160" fill="url(#grad2)"></rect>
+                    <ellipse cx="140" cy="80" rx="60" ry="40" fill="#000" opacity="0.3" filter="url(#blur2)"></ellipse>
+                    <text x="140" y="90" text-anchor="middle" fill="white" font-size="30" filter="url(#blur2)">18+</text>
+                </svg>
